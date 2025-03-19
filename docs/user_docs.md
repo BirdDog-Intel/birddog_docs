@@ -10,7 +10,7 @@ More specifically, BirdDog lets users:
 
 1. **Define Signals:** _Signals can be anything from a question about the employee count to company level objectives or tech stack or the identification of key personnel._ 
 2. **Enter Accounts:** _Accounts are entities to be tracked. They can be public companies, private companies, smbs, funds, government entities, or anything else--the only requirement is that they have a url._
-3. **Define ICPs:** _Ideal Customer Profiles (ICPs) are different lists that you can organize accounts & signals by.
+3. **Define ICPs:** _Ideal Customer Profiles (ICPs) are different lists that you can organize accounts & signals by._
 
 Given a set of signals & accounts, BirdDog will look for information on each signal for each account. After the initial pull, BirdDog will continue to monitor each account for changes in relation to any of its signals.
 
