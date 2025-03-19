@@ -1,0 +1,36 @@
+site_name: BirdDog Documentation
+site_url: https://docs.getbirddog.ai
+theme:
+  name: material
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark Mode
+      primary: yellow
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light Mode
+      primary: yellow
+  logo: assets/scout_head_big.png
+  favicon: assets/scout_head_big.png
+  features: 
+    - navigation.footer
+    - navigation.instant
+    - navigation.prefetch
+    - toc.integrate
+    - navigation.expand
+    - navigation.prune
+    - toc.integrate
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/birddog-ai
