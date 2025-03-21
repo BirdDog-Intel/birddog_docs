@@ -3,18 +3,20 @@ site_url: https://docs.getbirddog.ai
 theme:
   name: material
   palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark Mode
-      primary: yellow
 
     # Light Mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       toggle:
         icon: material/weather-night
         name: Light Mode
+      primary: yellow
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark Mode
       primary: yellow
   logo: assets/scout_head_big.png
   favicon: assets/scout_head_big.png

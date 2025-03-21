@@ -1,0 +1,900 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.getbirddog.ai/user_docs/">
+      
+      
+        <link rel="prev" href="../application_docs/">
+      
+      
+      
+      <link rel="icon" href="../assets/scout_head_big.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>User Docs - BirdDog Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#user-docs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BirdDog Documentation" class="md-header__button md-logo" aria-label="BirdDog Documentation" data-md-component="logo">
+      
+  <img src="../assets/scout_head_big.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BirdDog Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Docs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="indigo"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="yellow" data-md-color-accent="indigo"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BirdDog Documentation" class="md-nav__button md-logo" aria-label="BirdDog Documentation" data-md-component="logo">
+      
+  <img src="../assets/scout_head_big.png" alt="logo">
+
+    </a>
+    BirdDog Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../application_docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Application Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    User Docs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    User Docs
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#birddog-scout-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      BirdDog SCOUT Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Signals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question Library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecting-a-signal-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selecting a Signal Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatting-the-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatting the Question
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signal-rank-disqualification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signal Rank &amp; Disqualification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bad-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bad Questions?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-modifier-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special &amp; Modifier Tokens
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Special &amp; Modifier Tokens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-token-modifier-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Token - Modifier Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#source-token-modifier-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source Token - Modifier Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-token-special-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link Token - Special Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#employee-count-token-special-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee Count Token - Special Token
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accounts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accounts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Credits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-vs-inactive-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Active vs Inactive Accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-english-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non English Accounts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icps" class="md-nav__link">
+    <span class="md-ellipsis">
+      ICPS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ICPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#master-icp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Master ICP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-icps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other ICPs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signal-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signal Limits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adjusting-the-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjusting the Score
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disqualifier-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disqualifier Signals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email Templates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Email Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defining-a-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining a Template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-click-email-gen" class="md-nav__link">
+    <span class="md-ellipsis">
+      One Click Email Gen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="user-docs">User Docs</h1>
+<p><em><strong>The BirdDog User Docs focus on the technical features of BirdDog and how to implement them. For a more practical guide on how to use BirdDog to drive revenue for your team, please visit the Application Docs.</strong></em></p>
+<h2 id="birddog-scout-overview">BirdDog SCOUT Overview</h2>
+<p>The BirdDog SCOUT system helps sales people reasearch, rank, and monitor their account list. </p>
+<p>More specifically, BirdDog lets users:</p>
+<ol>
+<li><strong>Define Signals:</strong> <em>Signals can be anything from a question about the employee count to company level objectives or tech stack or the identification of key personnel.</em> </li>
+<li><strong>Enter Accounts:</strong> <em>Accounts are entities to be tracked. They can be public companies, private companies, smbs, funds, government entities, or anything else--the only requirement is that they have a url.</em></li>
+<li><strong>Define ICPs:</strong> <em>Ideal Customer Profiles (ICPs) are different lists that you can organize accounts &amp; signals by.</em></li>
+</ol>
+<p>Given a set of signals &amp; accounts, BirdDog will look for information on each signal for each account. After the initial pull, BirdDog will continue to monitor each account for changes in relation to any of its signals.</p>
+<p>Additional, Ideal Customer Profiles (ICPs) allow you to organize accounts &amp; signals by specific groups for better organization &amp; more targeted questions. </p>
+<p>To derive value from data, BirdDog has many workflow features to make it very easy for sales professionals to action the located data, driving revenue for the user's org. To learn more about leveraging BirdDog to generate revenue, we suggest starting with the Application Docs.</p>
+<h2 id="signals">Signals</h2>
+<p>Almost all of the data BirdDog gives you will come from Signals you define in the system. They give you tailored background information on the company, send you real time alerts, and rank your account list.</p>
+<p>At a high level, Signals are questions you want answered about your prospect list.</p>
+<p>From another angle, Signals are variables in a custom data set that BirdDog fills out on your behalf for each account. </p>
+<p>To input a signal, you simply need to select a data type, write the question, and select a rank.</p>
+<p>Each user will have a maxinum number of avaiable signals. You are free to delete signals &amp; add new ones as you please, as long as you stay under your total limit.</p>
+<p>This section focuses on adding signals. While most users will heavily lean on the Question Library to add questions, there are some more advanced features explained below.</p>
+<h3 id="question-library">Question Library</h3>
+<p>The easiest way to add a question to BirdDog is via the "Question Library." This collection has some very common questions alredy formatted in the best possible way for SCOUT to read.</p>
+<p>80% of the questions actively being run in the system by all users comes from this list. All you have to do is select a question and then give it a title that you like.</p>
+<h3 id="selecting-a-signal-type">Selecting a Signal Type</h3>
+<p>Most signals will be a Yes / No question, but there are four options available.</p>
+<p>It is important to note that for whatever type of question you select, you will be given a lot of context around the answer--a yes / no question doesn't just return a "yes", it returns the <em>why</em>!</p>
+<ol>
+<li><strong>Yes / No</strong>: The most common type of question, this allows you to ask almost anything about the account.</li>
+<li><strong>Person</strong>: The second most common type, Person questions surface people who match your target persona.</li>
+<li><strong>Multiple Choice</strong>: These questions let you define options for BirdDog to select from. If you want to know a firm's cloud providers, you might enter "AWS, GCP, Azure, Oracle". </li>
+<li><strong>Number</strong>: Number questions can help you estimate numeric data about the firm.</li>
+</ol>
+<p>Most questions can be framed as Yes or No. </p>
+<p>As an example, if you want to know what year the firm was founded, you could ask, "Does {account} say what year it was founded?"</p>
+<h3 id="formatting-the-question">Formatting the Question</h3>
+<p>BirdDog requires that every question added to the system has the word 'account' surrounded by the {} brackets, like this: {account}.</p>
+<p>Additionally, each question must end with a question mark. </p>
+<p>While you can get very creative with the question formats that you enter, here are some of the best performing formats:</p>
+<ul>
+<li>Does {account} do a specific thing?</li>
+<li>Did {account} do a specific thing?</li>
+<li>Did a founder or executive at {account} discuss a specific thing?</li>
+<li>Is {account} doing a specific thing, like hiring?</li>
+<li>Who at {account} matches a specific persona?</li>
+</ul>
+<p>Note that these questions all tend to have {account} near the start of the sentence, and only have it occur once. The system likes that better!</p>
+<h3 id="signal-rank-disqualification">Signal Rank &amp; Disqualification</h3>
+<p>Each signal will have a user defined rank of high, medium, or low that effects the account scoring algorithm.</p>
+<p>High Importance questions are worth 2x as much as Medium Importance questions. Medium Importance questions are worth twice as much as Low Importance questions.</p>
+<p>Typically, you'll want to reserve the High Importance ranks for really important signals or signals that aren't so common. That way, when that rare signal does happen, it will move the account towards the top of the pile.</p>
+<p>On the other hand, you'll want to save Low Importance ranks for background information or much more common signals.</p>
+<p>Additionally, you can set a signal’s rank to be “disqualify.” This means that if we find a positive answer for that signal, the score will be 0 and the account will be hidden from your main list so you don’t have to focus on it.</p>
+<h3 id="bad-questions">Bad Questions?</h3>
+<p>While a lot can go into a great question, don't be afraid to play around making new ones. BirdDog will give you feedback on your questions if it notices something is off. </p>
+<p>On top of that, in the question menu, each question will have a counter for how many times it came back with a positive answer. That way, you can see questions with low hit rates and either edit or remove them.</p>
+<p>And, of course, you're always able to contact support for more help designing the question for you.</p>
+<h3 id="special-modifier-tokens">Special &amp; Modifier Tokens</h3>
+<p>BirdDog supports a number of options that can either slightly alter or dramatically change the functionality of the question. </p>
+<p>Rather than including a bunch of extra dials and nobs on the platform, you can enable this functionality for a question by leveraging tokens, which are simply words and phrases you can include in your question.</p>
+<p><strong>Modifier Tokens</strong> have a lighter effect on the question, such as constraining the date of the data we’ll include in the answer to a smaller window. On the other hand, <strong>Special Tokens</strong> dramatically change the way that a question is answered and typically use an entirely separate pipeline.</p>
+<p>The below outlines different tokens available for your use in BirdDog. As a precaution, if one of the Special Tokens are detected, the system will warn you as you upload it into the system.</p>
+<p>Both Special Tokens have a number of templates in the Signal Library.</p>
+<h4 id="time-token-modifier-token"><u>Time Token - Modifier Token</u></h4>
+<p>If you want to constrain the results of a BirdDog query to only pull data from the last year, all you have to do is include the word “<strong>recent</strong>” or “<strong>recently</strong>” in your signal. </p>
+<p>If you’d like a more specific constraint, you can end the signal with any of the following phrases, replacing n with the desired number, either typed out or as a digit:</p>
+<ul>
+<li>“<strong>in the last n days</strong>”</li>
+<li>“<strong>in the last n months</strong>”</li>
+<li>“<strong>in the last n years</strong>”</li>
+</ul>
+<p>BirdDog will use these Time Tokens to compute the appropriate look back window.</p>
+<p>And finally, if you’d like a event to be within a range, such as perhaps as an exec who was added three months ago but not more than six months ago, or a funding round 1 year old but not 2 years old, you can explicitly say this:</p>
+<ul>
+<li>“<strong>in the last 90 to 180 days</strong>”</li>
+<li>“<strong>in the past 1 to 2 years</strong>”</li>
+</ul>
+<h4 id="source-token-modifier-token"><u>Source Token - Modifier Token</u></h4>
+<p>If you’d like to constrain the scope of BirdDog’s search to only be the company website, you can add the phrase “<strong>on their website</strong>” to the question.</p>
+<h4 id="link-token-special-token"><u>Link Token - Special Token</u></h4>
+<p>Sometimes, you want to know if a company links from the website to some other source. This can be super useful if you want to know what ATS or payment process a company uses, among other things. </p>
+<p>An easy way to find out is to use the Link Token. To trigger it, create a multiple choice question starting with “<strong>Does {account} link to…”</strong> Then, you can write whatever sort of description you want, like “a payment processor” or “an ATS.”</p>
+<p>The real important part, though, is filling out the urls in question as the list of options for the multiple choice question. So, in the case of an ats, you might include a list like, “<a href="http://greenhouse.io/">greenhouse.io</a>, <a href="http://smartrecruiters.com/">smartrecruiters.com</a>, <a href="http://myworkdayjobs.com/">myworkdayjobs.com</a>, <a href="http://successfactors.com/">successfactors.com</a>, <a href="http://icims.com/">icims.com</a>, <a href="http://welcometothejungle.com/">welcometothejungle.com</a>, <a href="http://ashbyhq.com/">ashbyhq.com</a>.”</p>
+<p>Then, when BirdDog goes to run the question, it will check the company’s site for outbound links &amp; report back with what it found.</p>
+<h4 id="employee-count-token-special-token"><u>Employee Count Token - Special Token</u></h4>
+<p>If you only want to focus on accounts above or below a certain threshold, you can use the Employee Count Token by writing a yes/no question with: “<strong>Does {account} have [MORE/LESS] than N employees?</strong>”</p>
+<p>Then, you just replace <strong>[MORE/LESS]</strong> with either “more” or “less” and the number with the desired number of tokens. From there, the system will go ahead and compare your number directly to the employee count we’ve recorded on our platform. </p>
+<p>A lot of the time, this can be useful as a disqualifier question to filter out accounts with employee count above or below a certain number.</p>
+<p><i>
+CAUTION: Our employee count comes from <em>the number of employees the account has on LinkedIn</em>. This typically works pretty well, but you might have issues with it in the case of universities or very large companies. As an example, Boeing has ~117K employees on LinkedIn, while their website boasts 170K.
+</i></p>
+<h2 id="accounts">Accounts</h2>
+<p>An account is any entity that you want BirdDog to track.</p>
+<p>Usually, an account is a company, but it can also be a nonprofit organization, a university, a government agency, sovereign entity, or really any other sort of organization you can imagine. </p>
+<p>Each account is uniquely identified by it’s url.</p>
+<h3 id="background-data">Background Data</h3>
+<p>While BirdDog will hunt for the user defined signals for each account, as a default, the system will look for some of the following basic info:</p>
+<ul>
+<li>Short &amp; Long background descriptions</li>
+<li>HQ Address</li>
+<li>Ticker &amp; CIK if publicaly traded</li>
+<li>Employee count via LinkedIn Employees</li>
+<li>Company LinkedIn url</li>
+</ul>
+<h3 id="adding-accounts">Adding Accounts</h3>
+<p>To add accounts, you can enter a comma separated list of the urls into the account page. Alternatively, you can email the BirdDog team a CSV and they will upload the accounts for you.</p>
+<p>When adding an account, you will be asked which ICP you want to add it to. For more information on that, please visit the ICP section.</p>
+<h3 id="credits">Credits</h3>
+<p>You can allocate any number of credits to different users in your org. The allocated credits determine both the maximum number of accounts that can be tracked at any given time &amp; the number of new accounts that can be added each month.</p>
+<h3 id="active-vs-inactive-accounts">Active vs Inactive Accounts</h3>
+<p>An active account will be consistently monitored by the BirdDog system for updates. </p>
+<p>If you deactivate an account, while the system will no longer watch for new signals on that account, you will still have access to historic data that the system has already pulled on it.</p>
+<p>There is no limit to the number of Inactive Accounts you can keep in the system at any given time.</p>
+<h3 id="non-english-accounts">Non English Accounts</h3>
+<p>As a default, accounts with a site that is mainly in a non english language will be rejected by BirdDog.</p>
+<p>Users on an Enterprise plan can request support for specific languages.</p>
+<h2 id="icps">ICPS</h2>
+<p>ICPs are lists that help you organize your accounts &amp; questions. </p>
+<h3 id="master-icp">Master ICP</h3>
+<p>When your account is provisioned, you will be given a Master ICP.</p>
+<p>Any signal you add to the Master ICP will be asked across all of your accounts, even the ones outside of the Master ICP.</p>
+<h3 id="other-icps">Other ICPs</h3>
+<p>You can provision any number of ICPs you want outside of your master ICP. </p>
+<p>These other ICPs enable you to ask specific questions for that ICP which are not asked to any other accounts.</p>
+<p>Some users will use ICP for prospects at different stages of funding, others will use them for different geographic regions, or even different industries. </p>
+<h3 id="signal-limits">Signal Limits</h3>
+<p>The remaining number of signals you can add is calulcated on an ICP by ICP basis. </p>
+<p>If you are entitled to 15 Signals per account, and you have 10 signals in your Master ICP, then you can add 5 more signals to each other ICP. </p>
+<p>However, if you have 10 Signals for your Master ICP and 5 in another ICP, you cannot add anymore Signals to tthe Master ICP, as that would cause the other ICP to have 16 Signals total.</p>
+<h2 id="scoring">Scoring</h2>
+<p>Your accounts will be given a custom score based on the quantity and recency of signals that BirdDog finds. </p>
+<p>The score is on a scale of 0 to 100. </p>
+<p>More often than the score, you will see the percentile that an account ranked in its ICP. A 99th percentile account is better than most other accounts in that ICP, while a 10th percentile account is not very good compared to most of the other accounts in the ICP.</p>
+<p>Typically, 90th percentile accounts will have a score in the range of 60-80. </p>
+<p>A 100 is very rare and an exceptional account—it means we found a very high certainty positive answer for each yes or no question for that account. </p>
+<p>On the other hand, a 0 means we found no positives for any of your signals.</p>
+<h3 id="adjusting-the-score">Adjusting the Score</h3>
+<p>For each signal, you’re able to edit the relative weighting of each score. A “normal” importance question is 2x as important as a “low” importance question, and a “high” importance question is 2x as important as a “normal” importance question.</p>
+<h3 id="disqualifier-signals">Disqualifier Signals</h3>
+<p>If return a positive for a disqualifier signal for one of your accounts, the rest of the scoring elements will be ignored and the account will rank lower than your accounts with a score of 0.</p>
+<h2 id="email-templates">Email Templates</h2>
+<p>Users &amp; Admins are able to create email templates in the platform.</p>
+<p>These templates can then be attached to signals for one click email generation. </p>
+<p><i>
+It is important to note that while this is a powerful feature, one email does not replace multi channel, multi threaded outreach. BirdDog helps you augment and expedite the sales processes that you know work, not replace them.
+</i></p>
+<h3 id="defining-a-template">Defining a Template</h3>
+<p>To define a template, you need two things:</p>
+<ol>
+<li>An Example Email</li>
+<li>An Templatized Version of that Email</li>
+</ol>
+<p>You can copy and paste an example email that you like sending into the add template section of the profile page. </p>
+<p>From there, you past a templatizd version into the template slot.</p>
+<p>To make the templated email, you just replace the word or phrase you want BirdDog to write with a brief instruction surrounded by &lt;&lt;&gt;&gt;.</p>
+<p>Here is an example email &amp; a corresponding template:</p>
+<p><u>Example Email</u></p>
+<blockquote>
+<p>Conrgats on the recent Series A!</p>
+<p>We've helped companies at your point with growth. </p>
+<p>Free for a chat?</p>
+</blockquote>
+<p><u>Template Email</u></p>
+<blockquote>
+<p>&lt;&lt;note about recent funding&gt;&gt;</p>
+<p>We've helped companies at your point with growth. </p>
+<p>Free for a chat?</p>
+</blockquote>
+<p>When this template is used, BirdDog will replace "note about recent funding" with a customized phrase.</p>
+<h3 id="one-click-email-gen">One Click Email Gen</h3>
+<p>To enable One Click Email Gen for a given signal, you can attach the email template to a signal on the Signals page.</p>
+<details class="info">
+<summary>Can I use the same template across signals?</summary>
+<p>You can reuse the same template across signals, but you cannot add multiple templates to one signal!</p>
+</details>
+<p>Then, when you see the answer or a top article for that signal on the account page, the one click email gen will use your template, the article, and context about the company to write an email. </p>
+<p>If you don't have a template attachd to a given signal, the One Click Email Gen will select from some pre determined templates to write your message.</p>
+<p><strong>It is strongly recommended that you review all emails &amp; messaging generatd by BirdDog before sending anything to a propsect.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../application_docs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Application Docs">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Application Docs
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/company/birddog-ai" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "navigation.instant", "navigation.prefetch", "toc.integrate", "navigation.expand", "navigation.prune", "toc.integrate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
