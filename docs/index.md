@@ -1,7 +1,5 @@
 # Getting Started
 
-**THIS DOCUMENTATION IS FOR BIRDDOG V2, ROLLED OUT WITH OPT IN 2025.03.24. IF YOU ARE USING THE LEGACY VERSION OF BIRDDOG, SOME OF THIS DOCUMATION MAY BE INACCURATE. CONTACT US FOR SUPPORT.**
-
 BirdDog is a powerful & extensible research tool used by sales people to maximize revenue at their organization.
 
 The BirdDog Documentations is broken into two sections:
