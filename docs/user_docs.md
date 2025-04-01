@@ -236,6 +236,30 @@ For each signal, youâ€™re able to edit the relative weighting of each score. A â
 
 If return a positive for a disqualifier signal for one of your accounts, the rest of the scoring elements will be ignored and the account will rank lower than your accounts with a score of 0.
 
+## Farsight
+
+BirdDog Farsight leverages your existing accounts & signals to proactively find strong fit "look alike" accounts. 
+
+Unlike a black box ai look alike finder, Farsight will always supply you with the "why" behind the account it selected for you.
+
+You can enable Farisght with one of two different modes for each ICP, Limited Mode & Unlimited Mode. 
+
+Farsight performs best when each ICP represents a list of accounts with similar industries. Meaning Farsight will work better with an ICP dedicated to law firms & another ICP dedicated to retail outlets than it would with one ICP mixing both.
+
+### Limited Mode
+
+Farsight Limited Mode is what you will choose if you already have a limited, pre defined universe of accounts you are prospecting from. For example, if your leader gave you 900 or even 2000 accounts, you can add all of them into Farsight for the appropriate ICP. Or, if there are only 10,000 accounts in the whole world you could ever possibly sell to, you could upload them all to Farsight.
+
+Then, you can activate Farsight Limited mode, and it will intelligently scan through your list to find some of the best fit accounts.
+
+As it picks out high scoring accounts, it will populate them on the Farsight page, including a description of why Farsight thought it was a great account. Then, in one click, you can add it to your account list.
+
+### Unlimited Mode
+
+Farsight Unlimited Mode is great if your universe of potential clients is unbounded or difficult to define. Many of our users at smaller sales teams or startups without concrete account lists use Unlimited Mode to help them always have a list of new accounts on standby.
+
+Even in unlimited mode, you can still upload a list of accounts to Farsight. It will prioritize ranking those accounts over going out and looking for new ones.
+
 ## Email Templates
 
 Users & Admins are able to create email templates in the platform.
