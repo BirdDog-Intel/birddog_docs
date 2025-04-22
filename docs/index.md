@@ -2,10 +2,11 @@
 
 BirdDog is a powerful & extensible research tool used by sales people to maximize revenue at their organization.
 
-The BirdDog Documentations is broken into two sections:
+The BirdDog Documentations is broken into three sections:
 
-* Application Docs are an overview of how to get the most value out of BirdDog. Most users start here.  
-* User Docs are very specific, technical instructions on how to use the platform
+* Quick Start Guide explains how you can build a repeatable, winning workflow in BirdDog in under an hour.
+* Application Docs are an overvieew of how to get the most value out of BirdDog. Most users start here.  
+* User Docs are very specific, technical instructions on how to use the platform.
 
 ??? info "Is BirdDog useful for non sales people?"
 
