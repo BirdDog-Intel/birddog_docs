@@ -1,0 +1,721 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.getbirddog.ai/quick_start_guide/">
+      
+      
+        <link rel="prev" href="../application_docs/">
+      
+      
+        <link rel="next" href="../user_docs/">
+      
+      
+      <link rel="icon" href="../assets/scout_head_big.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Quick Start Guide - BirdDog Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quick-start-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BirdDog Documentation" class="md-header__button md-logo" aria-label="BirdDog Documentation" data-md-component="logo">
+      
+  <img src="../assets/scout_head_big.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BirdDog Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quick Start Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="indigo"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="yellow" data-md-color-accent="indigo"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BirdDog Documentation" class="md-nav__button md-logo" aria-label="BirdDog Documentation" data-md-component="logo">
+      
+  <img src="../assets/scout_head_big.png" alt="logo">
+
+    </a>
+    BirdDog Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../application_docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Application Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#upload-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upload Accounts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Signals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-email-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Email Templates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Workflows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#take-your-first-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Take Your First Action
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Take Your First Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sending-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending Connections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending Messages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cold-calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cold Calling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#winning-with-birddog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Winning With BirdDog
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="quick-start-guide">Quick Start Guide</h1>
+<p>The below steps will make sure your BirdDog Instance has everything you need to send out highly relevant emails in less than an hour</p>
+<ol>
+<li><strong>Upload Accounts</strong> <em>(&lt;5 min)</em></li>
+<li><strong>Create Signals</strong> <em>(&lt;15 min)</em></li>
+<li><strong>Add Email Templates</strong> <em>(&lt;15 min)</em></li>
+<li><strong>Create Workflow</strong> <em>(&lt;5 min)</em></li>
+<li><strong>Take Your First Actions</strong>  <em>(&lt;10 min)</em></li>
+</ol>
+<p>Some more advanced features include Farsight and Custom Signals, but to get started, we recommend taking the above 5 steps.</p>
+<h2 id="upload-accounts">Upload Accounts</h2>
+<p><i>Estimated Time: &lt;5 min </i></p>
+<p>The first thing you’ll want to do to provision BirdDog is to grab a list of urls for the accounts you’re most interested in tracking. </p>
+<p>To upload them to the platform, you’ll want them as a comma separated list like this:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">apple</span><span class="o">.</span><span class="n">com</span><span class="p">,</span> <span class="n">meta</span><span class="o">.</span><span class="n">com</span><span class="p">,</span> <span class="n">lululemon</span><span class="o">.</span><span class="n">com</span>
+</span></code></pre></div>
+<p>You can upload as many as you want at one time.</p>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/71bbadcce74945efb17aadcd3e79625e?sid=bdca2032-39db-47d0-80b1-aff6b11b8ca5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<p><u>Instructions</u></p>
+<ol>
+<li>Click Accounts on the left nav bar</li>
+<li>Click “Add Accounts”</li>
+<li>Paste your list of urls into the enter urls box</li>
+<li>Select a list using the “Select a list” drop down menu. Unless you already set up a list, you’ll want to select Master</li>
+<li>Click “Submit”</li>
+</ol>
+<p>Now, BirdDog will start looking for information on those accounts!</p>
+<h2 id="create-signals">Create Signals</h2>
+<p><i>Estimated Time: &lt;15 min </i></p>
+<p>You can quickly creates signals with BirdDog on the ‘Signals’ page by leveraging the Signal Library to quickly select some of the most popular questions that users ask. </p>
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/313ebfc6a5ba490dac26d28afd5dc1c5?sid=1e5ccb71-173f-4c86-ac96-998b1e24bd11" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<p><u>Instructions</u></p>
+<ol>
+<li>Click Signals on the left nav bar</li>
+<li>Click Add Signal</li>
+<li>Click Signal Library</li>
+<li>Click the use button next to the desired Signal</li>
+<li>Edit the Question to make sure it matches your needs</li>
+<li>Add a title to the question (this is for you to refer to the question later but does not impact the signal)</li>
+<li>Click “Apply to All”</li>
+<li>Repeat Steps 2-7 until you have 8 </li>
+</ol>
+<h2 id="add-email-templates">Add Email Templates</h2>
+<p><i>Estimated Time: &lt;15 min </i></p>
+<p><em>If you exclusively cold call, feel free to skip this step.</em></p>
+<p>To quickly generate high quality emails within the BirdDog platform, you can provision email templates and attach them to some of the signals we’ve just made.</p>
+<p>Some users write templates work with multiple signals, other users make a different template for each signal they’re going to send emails about.</p>
+<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/68e5954035c0487f876d18be47f8701d?sid=67cfdfae-108a-40b0-bbb0-0c0e72f37a63" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<p><u>Instructions</u></p>
+<ol>
+<li>Select a Signal that you’d like to have a template for. You don’t need to mark this down anywhere, you just need to know so you can write a good email.</li>
+<li>Find a real email you’ve sent about that signal. If you don’t have one, you can use this GPT to generate some examples for you. [LINK TO GPT]</li>
+<li>Click the “Settings” button on the bottom of the left nav bar</li>
+<li>Scroll down to the Email Templates section and click “Add Templates”</li>
+<li>Enter a Title for the template - this will be for your reference later</li>
+<li>Copy and paste the email you’d like to use as a template to the Example Email box. You don’t have to edit anything—it is just an example for BirdDog to use when it goes to write your email later.</li>
+<li>Copy and paste the same email into the template box. This time, replace any sentences you want BirdDog to rewrite with a brief description of what you want it to write in &lt;<brackets like this>&gt;. BirdDog will use the information about the signal we picked above to replace that text. Some examples:<ol>
+<li>&lt;<note about recent growth milestone>&gt;</li>
+<li>&lt;<note about hiring devops engineers>&gt;</li>
+<li>&lt;<congrats on new position>&gt;</li>
+</ol>
+</li>
+<li>Click “Submit”</li>
+<li>Go to the “Signals” menu on the left navbar</li>
+<li>Navigate to the signal that the email template is for</li>
+<li>In the ‘Email Template’ column, select the template you just created</li>
+</ol>
+<p>Now, when you select an article related to that signal in the platform, BirdDog will use your template to generate a draft!</p>
+<h2 id="add-workflows">Add Workflows</h2>
+<p><i>Estimated Time: &lt;5 min </i></p>
+<p>The final step before we start taking action in BirdDog is to set up Workflows.</p>
+<p>Workflows are custom to do lists that you set up for your accounts. In a way, they are like human in the loop sequences. </p>
+<p>Setting up a workflow is as simple as deciding which actions you want to take each day that you’re working on an account. </p>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/375f6111fa4049c38847c2253ee31037?sid=e719971b-bf13-408a-8d12-9a5c398ff4ad" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<p><u>Instructions</u></p>
+<ol>
+<li>Click Workflows on the left nav bar</li>
+<li>Click ‘Build Your Strategy’</li>
+<li>Select the number of emails, linkedin connects, and phone calls you want to make on day one of your workflow</li>
+<li>Click Save</li>
+<li>Click Add Next Step</li>
+<li>Repeat Steps 3-4 until your sequence is done</li>
+<li>Click Go Back in the top right corner </li>
+<li>Pick an account on your account list in the workflow page and change the “status” column from “Sideline” to “Working”</li>
+<li>Repeat step 8 as many times as you like - most users have 5 to 10 accounts in play at any given time</li>
+</ol>
+<p>Now you’re ready to hit the ground running with BirdDog.</p>
+<h2 id="take-your-first-action">Take Your First Action</h2>
+<p><i>Estimated Time: &lt;10 min </i></p>
+<p>Now that we have accounts uploaded, signals in place, email templates added, and workflows set up, it’s super easy to put all of the high powered research BirdDog has done for you to work.</p>
+<p>When you go to the main dashboard, you’ll see the accounts in your workflows with active todo’s highlighted in blue. </p>
+<p>Then, you can use the data to take action!</p>
+<p>Below are examples of how you can send connections, write emails, and cold call using the data in BirdDog. Ultimately, though, it’s about using the method that already works best for you or finding one that works well and sticking to it.</p>
+<h3 id="sending-connections">Sending Connections</h3>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/d49eb06898f44d66afcef710b60021ff?sid=56315ef6-02f4-409e-a325-a5a5722e3b71" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<p><u>Instructions</u></p>
+<ol>
+<li>Select an account on the Main Dashboard</li>
+<li>Scroll down to the Send Connections Table</li>
+<li>You can select people by:<ol>
+<li>Clicking Connect - This will take you directly to their LinkedIn Page</li>
+<li>Clicking Search - This will take you to a google search to find their linkedin profile</li>
+<li>Clicking More People - This will take you to the firm’s LinkedIn Page where you can find more people</li>
+</ol>
+</li>
+<li>Then, you can connect with them directly via the linkedin webpage</li>
+<li>If you clicked Connect or Search, BirdDog will auto increment the linkedIn connection counter at the top of the page; if you found them via the More People button, you will have to increment it by clicking the LinkedIn button at the top of the page.</li>
+</ol>
+<h3 id="sending-messages">Sending Messages</h3>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/13379849e7ec40bba35a0cb6599189b0?sid=b8f88cc8-c900-4e01-89a1-9de244851f9c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<p><u>Instructions</u></p>
+<ol>
+<li>Select an account on the Main Dashboard</li>
+<li>Select “Generate” on a top article for a desired signal that you’ve already attached a template to</li>
+<li>Edit the generated email</li>
+<li>Select the individuals to target using the contact table or by finding them in the article you used to write the email</li>
+<li>Grab their contact info from Apollo or your favorite contact tool</li>
+<li>Send the email via your preferred sending method</li>
+</ol>
+<p>Of course, you can use the BirdDog to write the emails yourself or even use multiple signals to write one email.</p>
+<h3 id="cold-calling">Cold Calling</h3>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/94683e14230f49e48903eb353c8dbafc?sid=52d80e21-7dd5-4fd8-ac2c-8c862e8bfae8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<p><u>Instructions</u></p>
+<ol>
+<li>Select an account on the Main Dashboard</li>
+<li>Copy important signals and articles to the note pad</li>
+<li>Select an individual in the contact table</li>
+<li>Grab their phone number from Apollo or your favorite contact tool</li>
+<li>Call them with the note pad pulled up so you can reference the data on the call if needed</li>
+</ol>
+<h2 id="winning-with-birddog">Winning With BirdDog</h2>
+<p>And there you have it--you've now uploaded your accounts, set up signals &amp; email templates, created your workflows, and taken your first actions in BirdDog. </p>
+<p>While setting up the software is just the beginning, you're well on your way to enriching your entire sales process with BirdDog. </p>
+<p>Keys to finding success with BirdDog include:</p>
+<ul>
+<li>Fine Tuning your signals until they're giving you exactly the info that you need</li>
+<li>Regularly using the data provided via alerts &amp; in the platform to enrich your entire sales process</li>
+<li>Completing the actions you committed to in the workflows</li>
+</ul>
+<p>Feel free to explore the Application Docs to understand more high level ways that users are leveraging BirdDog for Account Prioritization, Buyer Targeting, Timely Outreach, Strategic Communication, Following Up with SQLs, and Nuturing &amp; Reviving Closed Lost leads.</p>
+<p>And, if you want a more comprehensive look around the software, check out the User Docs, as well.</p>
+<p>We wish you the best of luck as you use BirdDog to help you find the perfect prospect at the perfect time. </p>
+<p>If you have any questions or need any help, the team is only one call away!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../application_docs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Application Docs">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Application Docs
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../user_docs/" class="md-footer__link md-footer__link--next" aria-label="Next: User Docs">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                User Docs
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/company/birddog-ai" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "navigation.instant", "navigation.prefetch", "toc.integrate", "navigation.expand", "navigation.prune", "toc.integrate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
