@@ -10,14 +10,14 @@ theme:
       toggle:
         icon: material/weather-night
         name: Light Mode
-      primary: #FFF67A
+      primary: "#FFF67A"
     # Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Dark Mode
-      primary: #FFF67A
+      primary: "#FFF67A"
   logo: assets/scout_head_big.png
   favicon: assets/scout_head_big.png
   features: 
