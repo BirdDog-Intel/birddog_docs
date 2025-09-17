@@ -1,33 +1,36 @@
 site_name: BirdDog Documentation
 site_url: https://docs.getbirddog.ai
+
 theme:
   name: material
   palette:
-
-    # Light Mode
+    # Light
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: custom        # <— use “custom”, not a hex
       toggle:
         icon: material/weather-night
         name: Light Mode
-      primary: "#FFF67A"
-    # Dark Mode
+    # Dark
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: custom
       toggle:
         icon: material/weather-sunny
         name: Dark Mode
-      primary: "#FFF67A"
   logo: assets/scout_head_big.png
   favicon: assets/scout_head_big.png
-  features: 
+  features:
     - navigation.footer
     - navigation.instant
     - navigation.prefetch
     - toc.integrate
     - navigation.expand
     - navigation.prune
-    - toc.integrate
+
+extra_css:
+  - assets/brand.css        # <— add this line
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -38,8 +41,3 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
-extra:
-  social:
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/company/birddog-ai
