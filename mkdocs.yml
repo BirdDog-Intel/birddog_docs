@@ -17,7 +17,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Dark Mode
-      primary: yellow
+      primary: #FFF67A
   logo: assets/scout_head_big.png
   favicon: assets/scout_head_big.png
   features: 
