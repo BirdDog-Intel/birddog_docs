@@ -10,7 +10,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Light Mode
-      primary: yellow
+      primary: #FFF67A
     # Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
