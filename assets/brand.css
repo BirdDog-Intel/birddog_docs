@@ -1,0 +1,36 @@
+/* ------------------------------
+   HEADER COLORS
+   ------------------------------ */
+
+/* Light scheme */
+:root > * {
+  --md-primary-fg-color: #FFF67A;   /* Header background */
+  --md-primary-bg-color: #222;      /* Header text/icons */
+}
+
+/* Dark scheme */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #FFF67A;
+  --md-primary-bg-color: #222;
+}
+
+/* ------------------------------
+   NAVIGATION
+   ------------------------------ */
+
+/* Active/selected nav item (left sidebar) */
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  color: #000 !important;           /* Black for readability */
+  font-weight: 700;
+}
+
+/* Hovered nav links */
+.md-nav__link:hover {
+  color: #111 !important;           /* Very dark grey on hover */
+}
+
+/* Optional: highlight background for active item */
+.md-nav__item--active {
+  background-color: #f9f9f9;        /* subtle light grey */
+  border-left: 3px solid #000
