@@ -1,4 +1,4 @@
-# Application Docs
+# Why use BirdDog?
 
 The information that BirdDog produces can be super valuable, but it’s useless if you don’t make an effort to leverage it within your sales process.
 
