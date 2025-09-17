@@ -1,188 +1,201 @@
 # Quick Start Guide
+Your signal-powered sales advantage begins here  
 
-The below steps will make sure your BirdDog Instance has everything you need to send out highly relevant emails in less than an hour
+Welcome aboard. BirdDog helps you identify sales opportunities the moment they emerge by surfacing meaningful buying signals. This quick guide walks you through your initial setup—so you can start seeing value today.  
 
-1. **Upload Accounts** *(<5 min)*
-2. **Create Signals** *(<15 min)*
-3. **Add Email Templates** *(<15 min)*
-4. **Create Workflow** *(<5 min)*
-5. **Take Your First Actions**  *(<10 min)*
+---
 
-Some more advanced features include Farsight and Custom Signals, but to get started, we recommend taking the above 5 steps.
+## Quick Setup Overview  
+Get started with three core steps:  
 
-## Upload Accounts
+1. **Upload Your Accounts** (about 5 minutes)  
+2. **Create Your First Signals** (10–15 minutes)  
+3. **Take Your First Action** (under 5 minutes)  
 
-<i>Estimated Time: <5 min </i>
+Once complete, you’ll be positioned to engage prospects with timely, relevant insights.  
 
-The first thing you’ll want to do to provision BirdDog is to grab a list of urls for the accounts you’re most interested in tracking. 
+---
 
-To upload them to the platform, you’ll want them as a comma separated list like this:
+## Step 1: Upload Accounts  
+**Time:** under 5 minutes | **Outcome:** BirdDog begins tracking account activity  
 
-```py
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+  <iframe src="https://www.loom.com/embed/cff961e7d44a4ae79f5f801c65619fb2?sid=f9c9b56b-024a-4d64-b939-82512b011976"
+          frameborder="0"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
+
+To begin, upload a list of the company domains you want to monitor.  
+
+**Example:**  
+```text
 apple.com, meta.com, lululemon.com
 ```
 
-You can upload as many as you want at one time.
+**Instructions:**  
+1. Click **Accounts** on the left navigation bar  
+2. Click **Add Accounts**  
+3. Paste your domain list into the input field  
+4. Choose **Master** under *Select a list*  
+5. Click **Submit**  
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/71bbadcce74945efb17aadcd3e79625e?sid=bdca2032-39db-47d0-80b1-aff6b11b8ca5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+BirdDog will immediately begin scanning those accounts for relevant activity.  
 
-<u>Instructions</u>
+---
 
-1. Click Accounts on the left nav bar
-2. Click “Add Accounts”
-3. Paste your list of urls into the enter urls box
-4. Select a list using the “Select a list” drop down menu. Unless you already set up a list, you’ll want to select Master
-5. Click “Submit”
+## Step 2: Create Signals  
+**Time:** 10–15 minutes | **Outcome:** Real-time buying cues start appearing  
 
-Now, BirdDog will start looking for information on those accounts!
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+  <iframe src="https://www.loom.com/embed/3fa744ceaabf4307948ca76f0d145b25?sid=7a6e85dd-d44c-455e-a647-da6df08898f2"
+          frameborder="0"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
 
-## Create Signals
+**What are Signals?**  
+Signals are cues such as funding announcements, leadership changes, job postings, or technology adoption that suggest a company may be ready to buy.  
 
-<i>Estimated Time: <15 min </i>
+**Instructions:**  
+1. Click **Signals** on the left navigation bar  
+2. Click **Add Signal**  
+3. Open the **Signal Library**  
+4. Click **Use** on a Signal template that fits your needs  
+5. Edit the Question to reflect what you want to monitor  
+6. Add a Title for internal reference  
+7. Click **Apply to All**  
+8. Repeat until you’ve created 6–8 Signals  
 
-You can quickly creates signals with BirdDog on the ‘Signals’ page by leveraging the Signal Library to quickly select some of the most popular questions that users ask. 
+💡 *Tip: Focus on signals that align with your sales strategy or ideal customer profile.*  
 
-<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/313ebfc6a5ba490dac26d28afd5dc1c5?sid=1e5ccb71-173f-4c86-ac96-998b1e24bd11" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+---
 
-<u>Instructions</u>
+## Step 3: Setup Farsight  
+**Time:** under 5 minutes | **Outcome:** Recommend new accounts based on your existing list  
 
-1. Click Signals on the left nav bar
-2. Click Add Signal
-3. Click Signal Library
-4. Click the use button next to the desired Signal
-5. Edit the Question to make sure it matches your needs
-6. Add a title to the question (this is for you to refer to the question later but does not impact the signal)
-7. Click “Apply to All”
-8. Repeat Steps 2-7 until you have 8 
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+  <iframe src="https://www.loom.com/embed/0c9784bae036410f83d5fc43572db1e1?sid=f2d08bf2-a4a9-4451-b9d9-e62238b8df75"
+          frameborder="0"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
 
-## Add Email Templates
+**What is Farsight?**  
+Farsight provides recommended accounts you’re not actively tracking yet, based on lookalikes of your current prospect list and uploaded signals.  
 
-<i>Estimated Time: <15 min </i>
+**Instructions:**  
+1. Click the **Farsight** page  
+2. Click **Adjust Settings**  
+3. Select the list(s) you want to turn on  
+   - *Note: make sure you’ve uploaded a few accounts first so the system knows what type you’re targeting*  
+4. Choose a Farsight mode: *Smart Recommendations* or *Manual List Upload*  
+5. Click **Upload**  
 
-*If you exclusively cold call, feel free to skip this step.*
+Farsight will provide recommendations each morning.  
 
-To quickly generate high quality emails within the BirdDog platform, you can provision email templates and attach them to some of the signals we’ve just made.
+---
 
-Some users write templates work with multiple signals, other users make a different template for each signal they’re going to send emails about.
+## Step 4: Take Your First Action / Helpful Tips  
+**Time:** under 5 minutes | **Outcome:** Begin using insights to guide outreach  
 
-<div style="position: relative; padding-bottom: 64.90384615384616%; height: 0;"><iframe src="https://www.loom.com/embed/68e5954035c0487f876d18be47f8701d?sid=67cfdfae-108a-40b0-bbb0-0c0e72f37a63" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+  <iframe src="https://www.loom.com/embed/72b870bef23748eeb5e9b847568738de?sid=e248b184-6b61-4038-86dc-0fb227a119a9"
+          frameborder="0"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
 
-<u>Instructions</u>
+Now that your accounts are uploaded and signals are in place, you’re ready to act.  
 
-1. Select a Signal that you’d like to have a template for. You don’t need to mark this down anywhere, you just need to know so you can write a good email.
-2. Find a real email you’ve sent about that signal. If you don’t have one, you can use this GPT to generate some examples for you. [LINK TO GPT]
-3. Click the “Settings” button on the bottom of the left nav bar
-4. Scroll down to the Email Templates section and click “Add Templates”
-5. Enter a Title for the template - this will be for your reference later
-6. Copy and paste the email you’d like to use as a template to the Example Email box. You don’t have to edit anything—it is just an example for BirdDog to use when it goes to write your email later.
-7. Copy and paste the same email into the template box. This time, replace any sentences you want BirdDog to rewrite with a brief description of what you want it to write in <<brackets like this>>. BirdDog will use the information about the signal we picked above to replace that text. Some examples:
-    1. <<note about recent growth milestone>>
-    2. <<note about hiring devops engineers>>
-    3. <<congrats on new position>>
-8. Click “Submit”
-9. Go to the “Signals” menu on the left navbar
-10. Navigate to the signal that the email template is for
-11. In the ‘Email Template’ column, select the template you just created
+**Ways to use insights:**  
+- Send a personalized email referencing a Signal  
+- Make a targeted cold call based on new information  
+- Tag or prioritize the account in your CRM  
 
-Now, when you select an article related to that signal in the platform, BirdDog will use your template to generate a draft!
+⚡ The earlier you act, the better your chances of standing out.  
 
-## Add Workflows
+---
 
-<i>Estimated Time: <5 min </i>
+# You’re Now Set Up for Success  
 
-The final step before we start taking action in BirdDog is to set up Workflows.
+You've completed the initial setup and are ready to start using BirdDog to drive real conversations and new pipeline.  
 
-Workflows are custom to do lists that you set up for your accounts. In a way, they are like human in the loop sequences. 
+From here, it’s all about building momentum:  
+- Continue refining your signals  
+- Check BirdDog regularly or enable alerts  
+- Focus your outreach on the most relevant accounts  
 
-Setting up a workflow is as simple as deciding which actions you want to take each day that you’re working on an account. 
+---
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/375f6111fa4049c38847c2253ee31037?sid=e719971b-bf13-408a-8d12-9a5c398ff4ad" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+## Advanced Setup and Pro Tips  
 
-<u>Instructions</u>
+### Email Templates  
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+  <iframe src="https://www.loom.com/embed/68e5954035c0487f876d18be47f8701d?sid=827d5ba6-7ebe-49de-a359-65453a4f62ff"
+          frameborder="0"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
 
-1. Click Workflows on the left nav bar
-2. Click ‘Build Your Strategy’
-3. Select the number of emails, linkedin connects, and phone calls you want to make on day one of your workflow
-4. Click Save
-5. Click Add Next Step
-6. Repeat Steps 3-4 until your sequence is done
-7. Click Go Back in the top right corner 
-8. Pick an account on your account list in the workflow page and change the “status” column from “Sideline” to “Working”
-9. Repeat step 8 as many times as you like - most users have 5 to 10 accounts in play at any given time
+Let BirdDog automatically write personalized outreach using signals and your messaging style.  
 
-Now you’re ready to hit the ground running with BirdDog.
+**Instructions:**  
+- Navigate to **Settings > Email Templates**  
+- Upload past examples of successful outreach  
+- Use placeholders like `<mention funding>` or `<highlight launch>` to automate content  
+- Assign templates to Signals for dynamic email generation  
 
-## Take Your First Action
+---
 
-<i>Estimated Time: <10 min </i>
+### CRM Integration  
+Connect BirdDog with your CRM to:  
+- Push signal data into account records  
+- Track workflows automatically  
+- Use signal engagement as a trigger for sequences  
 
-Now that we have accounts uploaded, signals in place, email templates added, and workflows set up, it’s super easy to put all of the high powered research BirdDog has done for you to work.
+---
 
-When you go to the main dashboard, you’ll see the accounts in your workflows with active todo’s highlighted in blue. 
+### Google Calendar Integration: Pre-Meeting Research Briefs  
+BirdDog can send you a tailored research report before every sales meeting.  
 
-Then, you can use the data to take action!
+**What You’ll Get:**  
+A digest of the latest signal activity, news, and context for the company you’re meeting with.  
 
-Below are examples of how you can send connections, write emails, and cold call using the data in BirdDog. Ultimately, though, it’s about using the method that already works best for you or finding one that works well and sticking to it.
+**Setup Instructions:**  
+1. Navigate to **Settings > Integrations**  
+2. Click **Connect Calendar**  
+3. Log in with your Google account and authorize access  
+4. Choose which meetings should trigger research briefs  
+5. Select how far in advance you’d like reports sent  
 
-### Sending Connections
+---
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/d49eb06898f44d66afcef710b60021ff?sid=56315ef6-02f4-409e-a325-a5a5722e3b71" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+## Troubleshooting Tips  
+- **Signal not triggering?** Check that the account is uploaded and the Signal question is clear.  
+- **Emails not generating?** Make sure your email template is linked to the correct Signal.  
+- **No data yet?** It may take a few minutes for new Signals and insights to populate.  
 
-<u>Instructions</u>
+---
 
-1. Select an account on the Main Dashboard
-2. Scroll down to the Send Connections Table
-3. You can select people by:
-    1. Clicking Connect - This will take you directly to their LinkedIn Page
-    2. Clicking Search - This will take you to a google search to find their linkedin profile
-    3. Clicking More People - This will take you to the firm’s LinkedIn Page where you can find more people
-4. Then, you can connect with them directly via the linkedin webpage
-5. If you clicked Connect or Search, BirdDog will auto increment the linkedIn connection counter at the top of the page; if you found them via the More People button, you will have to increment it by clicking the LinkedIn button at the top of the page.
+## Need Help  
+We’re here to support you:  
 
-### Sending Messages
+- Email: [hello@getbirddog.ai](mailto:hello@getbirddog.ai)  
+- Slack or LinkedIn DMs  
+- [Book a call with our team](https://calendly.com/d/cn45-2dk-9pf/birddog-customer-chat)  
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/13379849e7ec40bba35a0cb6599189b0?sid=b8f88cc8-c900-4e01-89a1-9de244851f9c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+---
 
-<u>Instructions</u>
+# You’re Ready to Win with BirdDog 🚀  
 
-1. Select an account on the Main Dashboard
-2. Select “Generate” on a top article for a desired signal that you’ve already attached a template to
-3. Edit the generated email
-4. Select the individuals to target using the contact table or by finding them in the article you used to write the email
-5. Grab their contact info from Apollo or your favorite contact tool
-6. Send the email via your preferred sending method
+By uploading your accounts and setting up your Signals, you’ve already transformed reactive selling into proactive, signal-driven outreach.  
 
-Of course, you can use the BirdDog to write the emails yourself or even use multiple signals to write one email.
+Your prospects are out there. Now you’ll know exactly when to engage.  
 
-### Cold Calling
-
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/94683e14230f49e48903eb353c8dbafc?sid=52d80e21-7dd5-4fd8-ac2c-8c862e8bfae8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
-<u>Instructions</u>
-
-1. Select an account on the Main Dashboard
-2. Copy important signals and articles to the note pad
-3. Select an individual in the contact table
-4. Grab their phone number from Apollo or your favorite contact tool
-5. Call them with the note pad pulled up so you can reference the data on the call if needed
-
-
-## Winning With BirdDog
-
-And there you have it--you've now uploaded your accounts, set up signals & email templates, created your workflows, and taken your first actions in BirdDog. 
-
-While setting up the software is just the beginning, you're well on your way to enriching your entire sales process with BirdDog. 
-
-Keys to finding success with BirdDog include:
-
-- Fine Tuning your signals until they're giving you exactly the info that you need
-- Regularly using the data provided via alerts & in the platform to enrich your entire sales process
-- Completing the actions you committed to in the workflows
-
-Feel free to explore the Application Docs to understand more high level ways that users are leveraging BirdDog for Account Prioritization, Buyer Targeting, Timely Outreach, Strategic Communication, Following Up with SQLs, and Nuturing & Reviving Closed Lost leads.
-
-And, if you want a more comprehensive look around the software, check out the User Docs, as well.
-
-We wish you the best of luck as you use BirdDog to help you find the perfect prospect at the perfect time. 
-
-If you have any questions or need any help, the team is only one call away!
+— The BirdDog Team  
