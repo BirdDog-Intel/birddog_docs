@@ -1,4 +1,4 @@
-# BirdDog Signals Guide
+# Signals Guide
 *A practical, copy-pasteable playbook for writing A+ signals that your team can use today.*
 
 ---
