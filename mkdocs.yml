@@ -24,12 +24,12 @@ theme:
     - navigation.footer
     - navigation.instant
     - navigation.prefetch
-    # remove toc.integrate
+    # removed: toc.integrate
     - navigation.expand
     - navigation.prune
 
 extra_css:
-  - assets/brand.css        # <— add this line
+  - assets/brand.css
 
 markdown_extensions:
   - admonition
