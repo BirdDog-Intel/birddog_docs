@@ -1,4 +1,4 @@
-# Signals
+# Signals Page
 
 ### Walkthrough Video
 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
