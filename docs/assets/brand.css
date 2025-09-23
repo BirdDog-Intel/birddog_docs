@@ -15,7 +15,7 @@
 }
 
 /* ------------------------------
-   NAVIGATION
+   NAVIGATION LINKS
    ------------------------------ */
 
 /* Active/selected nav item (left sidebar) */
@@ -30,7 +30,30 @@
   color: #111 !important;           /* Very dark grey on hover */
 }
 
+/* Optional: subtle background highlight for the active item */
 .md-nav__item--active {
-  background-color: #f9f9f9;        /* keep highlight if you want */
-  border-left: none !important;     /* remove the black line */
+  background: #f9f9f9 !important;
+  border-left: 0 !important;
+  box-shadow: none !important;
+}
+
+/* ------------------------------
+   REMOVE DEFAULT SIDEBAR BORDER
+   ------------------------------ */
+
+.md-sidebar--primary,
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__inner {
+  border-right: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove Material's default active indicator pseudo-element */
+.md-nav__link--active::before,
+.md-nav__item--active > .md-nav__link::before,
+.md-nav__link--active::after,
+.md-nav__item--active > .md-nav__link::after {
+  content: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
