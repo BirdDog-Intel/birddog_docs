@@ -7,7 +7,7 @@ theme:
     # Light
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: custom        # <— use “custom”, not a hex
+      primary: custom
       toggle:
         icon: material/weather-night
         name: Light Mode
@@ -24,7 +24,7 @@ theme:
     - navigation.footer
     - navigation.instant
     - navigation.prefetch
-    - toc.integrate
+    # remove toc.integrate
     - navigation.expand
     - navigation.prune
 
