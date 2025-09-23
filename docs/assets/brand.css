@@ -30,7 +30,3 @@
   color: #111 !important;           /* Very dark grey on hover */
 }
 
-/* Optional: highlight background for active item */
-.md-nav__item--active {
-  background-color: #f9f9f9;        /* subtle light grey */
-  border-left: 3px solid #000
