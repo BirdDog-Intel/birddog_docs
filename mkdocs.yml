@@ -50,6 +50,7 @@ nav:
       - Signals Page: signals_page.md
       - Account Manager Page: account_manager.md
       - Team Page: team_page.md
+      - Email Templates: email_templates.md
   - Integrations:
       - Google Calendar: gcal.md
       - Hubspot: hubspot.md
