@@ -38,7 +38,7 @@ Thanks,
 Example:  
 Hi {first_name},
 
-Saw you were hiring — <<add a note about their hiring signal and mention recent research on their team>.
+Saw you were hiring — <<add a note about their hiring signal and mention recent research on their team>>.
 
 Thanks,
 {sender_name}
@@ -69,7 +69,7 @@ Example:
    - Or refine it further with **ChatGPT** before sending.
 
 ### Pro Tips
-- You can include **multiple prompts** (`[[ ]]`) in one email to personalize different sections.  
+- You can include **multiple prompts** (`<< >>`) in one email to personalize different sections.  
 - Keep prompts **clear and action-oriented** — tell BirdDog *what you want added*, not *how to write it*.  
 - Use BirdDog’s signals (like Hiring, Funding, or Expansion) to drive relevant, context-based outreach.  
 - Reuse and refine templates to match your team’s tone and brand voice.  
