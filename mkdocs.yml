@@ -51,10 +51,12 @@ nav:
       - Account Manager Page: account_manager.md
       - Team Page: team_page.md
       - Email Templates: email_templates.md
+  - Improving Signals:
+      - Signals Guide: signals_guide.md  
   - Integrations:
       - Google Calendar: gcal.md
       - Hubspot: hubspot.md
       - Salesforce: salesforce.md
   - Resources:
       - FAQ: frequently_asked_questions.md
-      - Signals Guide: signals_guide.md  
+  
