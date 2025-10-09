@@ -52,7 +52,8 @@ nav:
       - Team Page: team_page.md
       - Email Templates: email_templates.md
   - Improving Signals:
-      - Signals Guide: signals_guide.md  
+      - Signals Guide: signals_guide.md
+      - Improving Accuracy: signal_context.md 
   - Integrations:
       - Google Calendar: gcal.md
       - Hubspot: hubspot.md
