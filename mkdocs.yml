@@ -44,7 +44,7 @@ markdown_extensions:
 
 nav:
   - Getting Started: quick_start_guide.md
-  - Guides:
+  - Explaination By Page:
       - Home Page: home_page.md
       - Farsight Page: farsight_page.md
       - Signals Page: signals_page.md
