@@ -50,7 +50,6 @@ nav:
       - Signals Page: signals_page.md
       - Account Manager Page: account_manager.md
       - Team Page: team_page.md
-      - Email Templates: email_templates.md
   - Improving Signals:
       - Signals Guide: signals_guide.md
       - Improving Accuracy: signal_context.md 
@@ -60,4 +59,5 @@ nav:
       - Salesforce: salesforce.md
   - Resources:
       - FAQ: frequently_asked_questions.md
+      - Email Templates: email_templates.md
   
