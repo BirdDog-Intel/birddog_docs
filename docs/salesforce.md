@@ -14,77 +14,183 @@
 ---
 
 ### Overview
-The **Salesforce integration** connects **BirdDog** directly to your CRM, allowing your account, opportunity, and intelligence data to stay perfectly in sync.
+The **Salesforce integration** connects BirdDog directly with your CRM, keeping your accounts, opportunities, and BirdDog Signals automatically synced.  
 
-By integrating with Salesforce, BirdDog automatically enriches your CRM records with insights, scores, and account intelligence — giving reps a clear view of which accounts are most like those they’ve already closed.
+With this integration, reps can see BirdDog’s enriched account data and scores inside Salesforce, while BirdDog continuously learns from your pipeline activity.
 
 ---
 
 ### Why It Matters
-- Syncs BirdDog intelligence directly into Salesforce records.  
-- Ensures your CRM reflects the most accurate, enriched account data.  
-- Lets your team prioritize accounts similar to your best customers.  
-- Supports both account and opportunity-level mapping.  
+Integrating BirdDog with your CRM allows for two major benefits:
+
+1. **Automatic syncing** of the accounts in your CRM with BirdDog’s scores and data.  
+   This keeps BirdDog insights accessible in Salesforce without requiring manual uploads or spreadsheets.
+
+2. **Smarter signals for every deal stage.**  
+   BirdDog dynamically adjusts the information it provides based on deal stage — helping reps focus on what’s most relevant whether they’re qualifying or closing.
+
+To achieve the first benefit, BirdDog needs access to **Accounts** in your CRM.  
+To achieve the second, BirdDog also requires access to **Opportunities**.
 
 ---
 
-### Setup (0:00 – 0:22)
+### Setup (0:00 – 0:34)
 1. Log into **BirdDog**.  
-2. Navigate to **Settings → Integrations** in the bottom-left corner.  
-3. Click **Salesforce** from the list of available integrations.  
-4. In the dropdown menu, choose your connection environment:  
-   - **Default:** for your production Salesforce environment.  
-   - **Sandbox:** for testing or staging environments.  
-5. Click **Submit** to start the authorization process.  
+2. Navigate to **Settings → Integrations** in the lower-left corner.  
+3. Scroll down to the **Integrations** module and select **Salesforce**.  
+4. Choose your environment:  
+   - **Default** for production.  
+   - **Sandbox** for testing.  
+5. Click **Submit** to start the connection.  
+
+You’ll be redirected to Salesforce to log in with your **Integration User** credentials.
 
 ---
 
-### Connecting to Salesforce (0:22 – 0:55)
-1. You’ll be redirected to the Salesforce login screen.  
-2. Log in using your **Salesforce integration user** credentials.  
+### Authentication & Integration Pattern
+Most BirdDog clients follow this standard integration pattern:
 
-**Recommendation:**  
-Use an **integration user** that has permissions for the specific **accounts** and **opportunities** you want synced between Salesforce and BirdDog.  
-This ensures all relevant data can flow bi-directionally and consistently.
+- Create or use an **Integration User** with permission to **view and edit** required objects and fields.  
+- The Integration User authenticates through BirdDog’s **OAuth flow** using BirdDog’s **Salesforce Connected App**.  
+- After authentication, they map CRM fields to BirdDog fields inside the BirdDog Platform.
 
----
+Once connected, BirdDog will:
+- **Pull** accounts and opportunities from Salesforce.  
+- **Push** enriched BirdDog data back to Salesforce fields.  
+- Perform these operations automatically in **daily batches**.
 
-### Field Mapping (0:55 – 1:49)
-Once connected, you’ll land on the **Field Mapping** page.
-
-Here you can define how BirdDog’s fields correspond to your Salesforce fields.
-
-**Required Mapping:**
-- **Account ID / Domain** → required to match Salesforce accounts with BirdDog accounts.  
-
-**Optional Mapping:**
-- **Opportunity fields** → connect BirdDog’s opportunity data to your CRM.  
-- **Custom fields** → map any additional data you’d like BirdDog to enrich.  
-
-After mapping, click **Submit** to save your configuration.
+When new accounts are uploaded or activated in BirdDog, the platform will immediately push updates to Salesforce.
 
 ---
 
-### Recommended Configuration
-- Always ensure your **Account ID** and **Domain** fields are mapped correctly — this is required for syncing.  
-- Map **Opportunity fields** if you want BirdDog to help identify accounts that resemble your **closed-won** deals.  
-- Use **Sandbox** for safe testing before pushing changes to your production environment.  
+### Connected App & OAuth Flow
+BirdDog uses a **Salesforce Connected App** hosted within BirdDog’s org.  
+When your first user connects, Salesforce automatically creates a **shadow copy** of that app in your own org (visible under Setup → App Manager).  
+
+No package installation is required.
+
+#### Scopes
+- **Manage user data via APIs** (`api`)  
+- **Perform requests at any time** (`refresh_token`, `offline_access`)  
+- **Access unique user identifiers** (`openid`)  
+
+#### Integration User Requirements
+- API Access Enabled  
+- Read/Write permissions on Accounts  
+- *(Optional)* Read permissions on Opportunities  
+
+#### Revoking Access
+Your admins can revoke tokens anytime under:  
+**Setup → Security → Connected Apps OAuth Usage**  
+Alternatively, BirdDog can disconnect and delete all authentication data upon request.
+
+---
+
+### Rate Limits
+BirdDog performs at least one **daily batch push and pull** operation.  
+Occasional additional syncs occur when users upload new accounts or trigger manual refreshes.  
+
+Typical clients find **~100 API calls per day** more than sufficient.  
+
+During the **first week**, expect increased sync frequency while the integration calibrates with your CRM.
+
+---
+
+### Object & Field Mappings
+BirdDog requires access to the **Account** object and optionally the **Opportunity** object to fully function.
+
+#### Account Mapping
+| Field | Required | Description |
+|--------|-----------|-------------|
+| `sf_id` | ✅ | Salesforce Account ID |
+| `Account_Domain` | ✅ | Company website URL |
+| `BirdDog_Description` | Optional | BirdDog “Why Now” summary |
+| `BirdDog_Score` | Optional | BirdDog Account Score (0–100) |
+| `BirdDog_Link` | Optional | Direct BirdDog Account Report URL |
+| `BirdDog_User` | Optional | Links BirdDog Account to assigned user |
+| `BirdDog_Signals` | Optional | Most recent BirdDog Signals for the account |
+
+> BirdDog can only process accounts that have an associated **website domain**.
+
+#### Recommended New Account Fields
+To get full value from the integration, administrators can create a few BirdDog-specific fields:
+
+**BirdDog_Description**  
+- *Type:* Text Area (Long)  
+- *Label:* BirdDog_Description  
+- *Length:* 1,000 characters  
+- *Help Text:* Summary of BirdDog Signals for the account.  
+
+**BirdDog_Score**  
+- *Type:* Number (0–100)  
+- *Label:* BirdDog_Score  
+- *Help Text:* Auto-populated BirdDog Signal Score.  
+
+**BirdDog_Link**  
+- *Type:* URL  
+- *Label:* BirdDog_Link  
+- *Help Text:* Link to the full BirdDog Account Report.  
+
+**BirdDog_Signals**  
+- *Type:* Rich Text  
+- *Label:* BirdDog_Signals  
+- *Help Text:* Latest BirdDog Signals for the account.  
+
+Ensure all fields are visible to relevant users and accessible to **API-only integrations**.
+
+You may optionally add a **BirdDog_User** field to link research directly to a user, though most clients map this to the existing Account Owner.
+
+---
+
+### Opportunity Mapping
+Mapping opportunity fields allows BirdDog to tailor recommendations based on deal progress and success likelihood.
+
+| Field | Required | Description |
+|--------|-----------|-------------|
+| `sf_id` | ✅ | Salesforce Opportunity ID |
+| `sf_account_id` | ✅ | ID of the related account |
+| `Name` | Optional | Opportunity name |
+| `Descr` | Optional | Opportunity description |
+| `Stage_name` | Optional | Stage of the opportunity |
+| `Amount` | Optional | Value of the opportunity |
+| `Close_date` | Optional | Expected close date |
+| `Prob` | Optional | Probability percentage |
+| `Next_step` | Optional | Next planned action |
+| `Lead_source` | Optional | Opportunity lead source |
+| `Is_closed` | Optional | Closed status |
+| `Is_won` | Optional | Won status |
+| `Created_date` | Optional | Creation timestamp |
+
+---
+
+### User Mapping
+BirdDog identifies users via their **company email address**.  
+To map BirdDog users to Salesforce users, send a simple two-column CSV (`email`, `Salesforce user ID`) to:  
+📧 **hello@getbirddog.ai**
+
+This allows BirdDog to correctly associate signals, accounts, and opportunities by rep.
+
+---
+
+### Testing & Sandbox Environments
+BirdDog supports integration with **Salesforce sandbox environments** using the same connection portal as production.  
+Simply select **Sandbox** during setup to connect your test environment.
+
+---
+
+### Example Accounts Using Salesforce Integration
+
+**Money Management International (MMI)** → rolling out **new CRM systems** and investing in **omnichannel customer experience** as part of a major **digital transformation initiative**.  
+
+**InvoiceCloud** → launched **AI-powered payment tools** and expanded **customer support hiring**, signaling strong growth in **digital CX automation**.  
+
+**Amplifon Hearing Health Care** → announced a **€100M investment** in **AI and customer service technology**, including a new **24/7 digital assistant app** for global users.  
 
 ---
 
 ### Support
-If you need help connecting Salesforce or setting up mappings:  
-- Review the **BirdDog Salesforce documentation** for detailed setup guidance.  
-- Or contact the **BirdDog support team** for assistance with permissions or field configurations.  
+For setup assistance or advanced configuration help:  
+📧 **noah@getbirddog.ai**  
+📞 **(231) 855-8001**
 
----
-
-### Summary
-The **Salesforce Integration** keeps BirdDog and your CRM in perfect sync, ensuring your sales team always works from clean, enriched, and prioritized data.  
-
-- Connect Salesforce using default or sandbox mode.  
-- Map account and opportunity fields for accurate syncing.  
-- Use an integration user with the right access permissions.  
-- Automatically enrich your CRM with BirdDog intelligence.  
-
-The result: **smarter account prioritization, seamless syncing, and better data-driven selling** — all inside Salesforce.
+BirdDog’s Salesforce integration ensures your CRM is always enriched with real-time intelligence, allowing your team to focus on what matters most — building stronger, data-driven relationships.
