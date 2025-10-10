@@ -178,16 +178,6 @@ Simply select **Sandbox** during setup to connect your test environment.
 
 ---
 
-### Example Accounts Using Salesforce Integration
-
-**Money Management International (MMI)** → rolling out **new CRM systems** and investing in **omnichannel customer experience** as part of a major **digital transformation initiative**.  
-
-**InvoiceCloud** → launched **AI-powered payment tools** and expanded **customer support hiring**, signaling strong growth in **digital CX automation**.  
-
-**Amplifon Hearing Health Care** → announced a **€100M investment** in **AI and customer service technology**, including a new **24/7 digital assistant app** for global users.  
-
----
-
 ### Support
 For setup assistance or advanced configuration help:  
 📧 **noah@getbirddog.ai**  
