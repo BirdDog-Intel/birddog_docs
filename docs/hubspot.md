@@ -140,17 +140,6 @@ To associate BirdDog users with HubSpot users, provide a simple two-column CSV (
 
 Send to: **hello@getbirddog.ai**
 
----
-
-## Example Accounts Using HubSpot Integration
-
-**Money Management International (MMI)** → rolling out **new CRM systems** and investing in **omnichannel customer experience** as part of a major **digital transformation initiative**.  
-
-**InvoiceCloud** → launched **AI-powered payment tools** and expanded **customer support hiring**, signaling strong growth in **digital CX automation**.  
-
-**Amplifon Hearing Health Care** → announced a **€100M investment** in **AI and customer service technology**, including a new **24/7 digital assistant app** for global users.  
-
----
 
 ## Support
 If you have any questions or need help configuring your integration:  
