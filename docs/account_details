@@ -1,0 +1,69 @@
+# Account Details
+
+### Walkthrough Video
+<div style="position: relative; padding-bottom: 56.25%; height: 0;">
+  <iframe src="https://www.loom.com/embed/2fe8ea7bae2143dfbbc6243bcc48ffba"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
+
+---
+
+### Overview
+The **Account Details** page provides a deep-dive into the intelligence BirdDog has gathered on a specific prospect. While the homepage helps you prioritize, this page is where you build your pre-call intelligence and craft hyper-personalized outbound messaging.
+
+---
+
+### High-Level Firmographics (0:01 – 0:40)
+At the top of the page, BirdDog surfaces essential company data to give you instant context:
+* **Company Vitale:** Industry, location, and employee count.
+* **Ownership:** Who is currently assigned to this account.
+* **Point Score:** The real-time intent score (0-100).
+* **Quick Links:** One-click access to the company website and LinkedIn profile.
+
+---
+
+### Intent & Intelligence Features
+
+#### 1. The Account Story (0:48 – 1:13)
+The **Account Story** is an AI-generated executive summary. It synthesizes all recent signals into a digestible narrative.
+* **What it tracks:** Aggressive sales expansion, specific hiring targets (e.g., Global 2000), and shifts in strategy.
+* **Dynamic Nature:** This story evolves automatically as new signals are detected, ensuring you always have the most current "hook" for your outreach.
+
+#### 2. Win Rate Boost (1:14 – 1:46)
+BirdDog identifies "Golden Signals" based on back-testing your successful closed-won deals.
+* **Statistical Edge:** If an account has a specific combination of signals (e.g., *Hiring Multiple Salespeople* + *Recent Funding*), BirdDog will display a multiplier.
+* **Action:** Prioritize accounts showing a **2.2x (or higher)** win rate boost, as they are statistically more likely to convert.
+
+#### 3. Signal Deep-Dives & Sources (1:55 – 2:48)
+Every signal listed is interactive. Clicking a signal reveals the "Truth behind the data":
+* **The Breakdown:** View the specific question BirdDog asked and the summary of the finding.
+* **Source Verification:** See the exact sources (Job postings, news articles, etc.) used to generate the signal.
+* **Outbound Material:** Use the **Quotes** and **Relevant Facts** section to copy-paste unique details directly into your emails or call scripts.
+
+---
+
+### Action Tools (2:55 – 3:44)
+The top and bottom navigation bars allow you to move the account through your workflow:
+
+| Tool | Action |
+| :--- | :--- |
+| **Share Report** | Send the full account intelligence via email to a teammate or manager. |
+| **Open in ChatGPT** | Exports all signals into a new chat window to generate scripts, emails, or CRM notes. |
+| **Add/View in CRM** | Instantly create a new record in Salesforce/HubSpot or view the existing record. |
+| **Archive/Delete** | Remove the account from your active view or permanently delete it. |
+
+---
+
+### Pro-Tip: Leveraging "The Hook"
+Don't just mention that a company is hiring. Use the **Account Story** and **Source Quotes** to mention *who* they are targeting (e.g., "I saw you're specifically hunting Global 2000 accounts...") to demonstrate a level of research that 99% of other reps won't do.
+
+---
+
+### Support
+Questions about a specific signal or "Win Rate Boost" calculation?
+📧 **noah@getbirddog.ai** 📞 **(231) 855-8001**
