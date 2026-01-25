@@ -45,7 +45,7 @@ markdown_extensions:
 
 nav:
   - Accounts:
-      - How to add accounts: adding_accounts.md
+      - How to add accounts: adding_account.md
       - How to get recommendations: account_rec_setup.md
       - How to Remove Accounts: remove_accounts.md
       - How to archive accounts: archiving_accounts.md
