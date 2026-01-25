@@ -1,92 +1,75 @@
 /* ------------------------------
-   GLOBAL BRANDING & LINEWORK
+   LEFT NAVIGATION: CONSISTENCY
    ------------------------------ */
-:root {
-  --md-text-font: "Inter", sans-serif;
-  --md-primary-fg-color: #000000 !important;
-  --md-code-bg-color: #f8f9fa;
-  --md-typeset-a-color: #000000;
-}
 
-/* ------------------------------
-   HEADER: PURE BLACK
-   ------------------------------ */
-.md-header {
-  background-color: #000000 !important;
-  border-bottom: 1px solid #333; /* Subtle line separation */
-}
-
-/* ------------------------------
-   LEFT NAV: THE "PLATFORM" SIDEBAR
-   ------------------------------ */
-/* Section Headers (Accounts, Plays, etc.) */
-.md-nav__item--nested > .md-nav__link {
-  font-weight: 600 !important;
-  text-transform: uppercase;
-  font-size: 11px !important;
-  letter-spacing: 0.05em;
-  color: #888 !important; /* Muted label look from platform */
-  margin-top: 20px;
-}
-
-/* Leaf Links (Individual Pages) */
-.md-nav__link {
+/* Make top-level links (like FAQ) match the dropdown header style */
+.md-nav__link[href="frequently_asked_questions.md"],
+.md-nav__link[href="quickstart.md"] {
   font-size: 14px !important;
-  padding: 8px 12px !important;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-}
-
-/* Active Page: The Black "Pill" from your screenshot */
-.md-nav__link--active {
-  background: #111 !important; /* Match platform selection */
-  color: #fff !important;
-  font-weight: 500 !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* ------------------------------
-   RIGHT NAV: GREY TABLE OF CONTENTS
-   ------------------------------ */
-.md-sidebar--secondary {
-  background-color: #F9F9F9; /* Clean Light Grey */
-  border-left: 1px solid #EEE; /* Linework separation */
-  padding: 20px !important;
-}
-
-.md-sidebar--secondary .md-nav__title {
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.md-sidebar--secondary .md-nav__link {
-  font-size: 12px !important;
-  padding: 4px 0 !important;
+  font-weight: 600 !important;
   color: #666 !important;
+  text-transform: none;
+  margin-top: 12px;
+  padding: 10px 16px !important;
 }
 
-.md-sidebar--secondary .md-nav__link:hover {
-  color: #000 !important;
-  background: transparent !important;
+/* Ensure these links don't get the black background unless they are the active page */
+.md-nav__link[href]:not(.md-nav__link--active) {
+  background-color: transparent !important;
 }
 
 /* ------------------------------
-   CONTENT REFINEMENT
+   TABLE OF CONTENTS (RIGHT SIDEBAR)
    ------------------------------ */
-/* Clean linework for headers */
-h1, h2, h3 {
-  color: #000;
-  font-weight: 800;
-  border-bottom: 1px solid #EEE;
-  padding-bottom: 10px;
+
+/* 1. Full grey background for the entire TOC container */
+.md-sidebar--secondary {
+  background-color: #f8f9fa !important; /* Soft grey background */
+  border-left: 1px solid #eee;
+  padding: 0 15px 20px 15px !important;
+  border-radius: 0 0 0 8px; /* Rounded corner on inside edge */
 }
 
-/* Style the walkthrough videos with a platform-like border */
-.video-container, iframe {
-  border: 1px solid #EEE;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+/* 2. TOC Header Title (TABLE OF CONTENTS) */
+.md-sidebar--secondary .md-nav__title {
+  background-color: #f8f9fa !important;
+  color: #000000 !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 20px 0 10px 0 !important;
+}
+
+/* 3. FIX: Black-on-Black text. Ensure TOC links are grey/black */
+.md-sidebar--secondary .md-nav__link {
+  font-size: 13px !important;
+  padding: 6px 0 !important;
+  background-color: transparent !important; /* Remove any inherited black backgrounds */
+  color: #555 !important; /* Dark grey text for readability */
+  line-height: 1.4;
+}
+
+/* 4. TOC Hover state */
+.md-sidebar--secondary .md-nav__link:hover {
+  color: #000000 !important;
+  text-decoration: underline;
+}
+
+/* 5. TOC Active state (Highlighting where you are in the doc) */
+/* We use a subtle bolding rather than a black box to keep it "Utility" style */
+.md-sidebar--secondary .md-nav__link--active {
+  color: #000000 !important;
+  font-weight: 700 !important;
+  background-color: transparent !important;
+}
+
+/* ------------------------------
+   CONTENT AREA REFINEMENT
+   ------------------------------ */
+h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
 }
