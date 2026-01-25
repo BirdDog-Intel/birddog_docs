@@ -1,21 +1,21 @@
-site_name: BirdDog Documentation
+site_name: BirdDog Tutorials
 site_url: https://docs.getbirddog.ai
 
 theme:
   name: material
   palette:
-    # Light Mode: Black Header, White Text
+    # Light Mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
+      primary: custom   # Use custom to link to our CSS variables
       accent: indigo
       toggle:
         icon: material/weather-night
         name: Light Mode
-    # Dark Mode (Slate): Black Header, White Text
+    # Dark Mode (Slate)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
+      primary: custom   # Use custom to link to our CSS variables
       accent: indigo
       toggle:
         icon: material/weather-sunny
