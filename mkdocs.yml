@@ -45,7 +45,7 @@ markdown_extensions:
 
 nav:
   - Setup:
-      - Adding Accounts: adding_accounts.md
+      - Adding Accounts: adding_account.md
       - Adjusting Signals: signal_setup.md
       - Turning on Account recommendations: account_rec_setup.md
   - Accounts:
