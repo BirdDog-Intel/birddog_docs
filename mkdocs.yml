@@ -44,10 +44,6 @@ markdown_extensions:
   - pymdownx.snippets
 
 nav:
-  - Setup:
-      - Adding Accounts: adding_account.md
-      - Adjusting Signals: signal_setup.md
-      - Turning on Account recommendations: account_rec_setup.md
   - Accounts:
       - How to add accounts: adding_accounts.md
       - How to get recommendations: account_rec_setup.md
