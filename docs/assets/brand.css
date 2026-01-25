@@ -19,69 +19,65 @@
 }
 
 /* ------------------------------
-   SIDEBAR NAVIGATION
+   SIDEBAR NAVIGATION (Platform Style)
    ------------------------------ */
 
-/* 1. Base style for ALL navigation items */
+/* Base style for all links and labels */
 .md-nav__link {
   font-size: 16px !important;
   line-height: 1.5;
-  padding: 10px 16px !important;
-  border-radius: 8px;
-  transition: background-color 0.2s, color 0.2s;
-  margin-bottom: 4px;
+  padding: 8px 12px !important;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  display: flex !important;
+  align-items: center;
+  transition: background-color 0.2s;
 }
 
-/* 2. Target only ACTIVE "Leaf" Pages (the actual documents) */
-/* This prevents the black background from getting stuck on parent categories */
-.md-nav__link--active:not([for]) {
+/* THE FIX: Ensure the parent items remain clickable toggles */
+/* We target links that have an associated toggle (dropdowns) */
+.md-nav__item--nested > .md-nav__link {
+  cursor: pointer !important;
+  color: #555 !important;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/* ACTIVE PAGE: Black background with white text */
+/* This only applies to the specific page you are currently viewing */
+.md-nav__link--active {
   background-color: #111111 !important;
   color: #ffffff !important;
   font-weight: 600 !important;
 }
 
-/* 3. Hover state for all links */
+/* HOVER: Light grey for better UI feedback */
 .md-nav__link:hover {
-  background-color: #f4f4f4 !important;
-  color: #000000 !important;
+  background-color: #f0f0f0 !important;
+  color: #000 !important;
 }
 
-/* 4. Parent/Dropdown Labels (Section Headers) */
-/* Styled to look like the "Manager" or "My Account" headers in the platform */
-.md-nav__item--nested > .md-nav__link {
-  font-size: 14px !important;
-  font-weight: 600;
-  color: #666 !important;
-  text-transform: none;
-  margin-top: 12px;
-  cursor: pointer;
-}
-
-/* 5. Fix for the Dropdown Arrow (Toggle) */
-/* Ensures the arrow is visible and doesn't disappear into a black background */
+/* ICON/ARROW STYLING */
 .md-nav__icon {
-  color: #666 !important;
+  color: currentColor !important; /* Arrow matches text color */
+  margin-left: auto; /* Pushes arrow to the right like your screenshot */
 }
 
 /* ------------------------------
-   CLEANUP
+   CLEANUP & OVERRIDES
    ------------------------------ */
 
-/* Remove default Material active indicators */
+/* Remove the default Material 'active' line indicator */
 .md-nav__link--active::before {
   display: none !important;
 }
 
+/* Remove sidebar borders for a flat platform look */
 .md-sidebar--primary {
   border-right: 0 !important;
 }
 
-/* Dark Mode Scheme Overrides */
-[data-md-color-scheme="slate"] .md-nav__link:hover {
-  background-color: #2e2e2e !important;
-  color: #ffffff !important;
-}
-
-[data-md-color-scheme="slate"] .md-nav__item--nested > .md-nav__link {
-  color: #aaa !important;
+/* Ensure nested lists have proper indentation without breaking clicks */
+.md-nav__list .md-nav__list {
+  padding-left: 0.5rem;
 }
