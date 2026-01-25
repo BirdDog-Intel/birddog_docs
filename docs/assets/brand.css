@@ -3,12 +3,12 @@
    ------------------------------ */
 :root {
   --md-text-font: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  --md-primary-fg-color: #000000 !important; /* Header background */
-  --md-primary-fg-color--light: #ffffff !important; /* Header text/icons */
+  --md-primary-fg-color: #000000 !important;
+  --md-primary-fg-color--light: #ffffff !important;
 }
 
 /* ------------------------------
-   HEADER OVERRIDES
+   HEADER & SITE TITLE
    ------------------------------ */
 .md-header {
   background-color: #000000 !important;
@@ -19,47 +19,56 @@
 }
 
 /* ------------------------------
-   SIDEBAR NAVIGATION (Matches Platform)
+   SIDEBAR NAVIGATION
    ------------------------------ */
 
-/* 16px Font Size for all Nav Links */
+/* 1. Base style for ALL navigation items */
 .md-nav__link {
   font-size: 16px !important;
   line-height: 1.5;
-  padding: 10px 16px !important; /* Increased padding like the platform */
-  border-radius: 8px; /* Rounded selection look */
-  transition: all 0.2s ease;
+  padding: 10px 16px !important;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
   margin-bottom: 4px;
 }
 
-/* Selected/Active Nav Item (Black Background, White Text) */
-.md-nav__item--active > .md-nav__link,
-.md-nav__link--active {
-  background-color: #111111 !important; /* Darker black for selected state */
-  color: #ffffff !important;           /* White text on black */
+/* 2. Target only ACTIVE "Leaf" Pages (the actual documents) */
+/* This prevents the black background from getting stuck on parent categories */
+.md-nav__link--active:not([for]) {
+  background-color: #111111 !important;
+  color: #ffffff !important;
   font-weight: 600 !important;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Hover State (Light grey background like the platform sidebar) */
+/* 3. Hover state for all links */
 .md-nav__link:hover {
   background-color: #f4f4f4 !important;
   color: #000000 !important;
 }
 
-/* Dark Mode Hover Adjustment */
-[data-md-color-scheme="slate"] .md-nav__link:hover {
-  background-color: #2e2e2e !important;
-  color: #ffffff !important;
+/* 4. Parent/Dropdown Labels (Section Headers) */
+/* Styled to look like the "Manager" or "My Account" headers in the platform */
+.md-nav__item--nested > .md-nav__link {
+  font-size: 14px !important;
+  font-weight: 600;
+  color: #666 !important;
+  text-transform: none;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+/* 5. Fix for the Dropdown Arrow (Toggle) */
+/* Ensures the arrow is visible and doesn't disappear into a black background */
+.md-nav__icon {
+  color: #666 !important;
 }
 
 /* ------------------------------
-   CLEANUP & REFINEMENT
+   CLEANUP
    ------------------------------ */
 
-/* Remove default Material indicators and borders */
-.md-nav__link--active::before,
-.md-nav__item--active > .md-nav__link::before {
+/* Remove default Material active indicators */
+.md-nav__link--active::before {
   display: none !important;
 }
 
@@ -67,16 +76,12 @@
   border-right: 0 !important;
 }
 
-/* Increase spacing between sidebar sections (Manager, My Account) */
-.md-nav__item--nested {
-  margin-top: 20px;
+/* Dark Mode Scheme Overrides */
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  background-color: #2e2e2e !important;
+  color: #ffffff !important;
 }
 
-/* Style the Sidebar Labels (Manager, My Account) to match platform */
-.md-nav__item--nested > .md-nav__link {
-  font-size: 14px !important;
-  text-transform: capitalize;
-  font-weight: 500;
-  color: #666 !important;
-  pointer-events: none; /* Make them look like headers, not buttons */
+[data-md-color-scheme="slate"] .md-nav__item--nested > .md-nav__link {
+  color: #aaa !important;
 }
