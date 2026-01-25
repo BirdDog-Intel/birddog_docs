@@ -4,17 +4,19 @@ site_url: https://docs.getbirddog.ai
 theme:
   name: material
   palette:
-    # Light
+    # Light Mode: Black Header, White Text
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: custom
+      primary: black
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Light Mode
-    # Dark
+    # Dark Mode (Slate): Black Header, White Text
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: custom
+      primary: black
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Dark Mode
@@ -24,7 +26,6 @@ theme:
     - navigation.footer
     - navigation.instant
     - navigation.prefetch
-    # removed: toc.integrate
     - navigation.expand
     - navigation.prune
 
