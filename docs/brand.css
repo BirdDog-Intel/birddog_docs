@@ -1,0 +1,24 @@
+/* Force header variables to use White text on Black background */
+:root, [data-md-color-scheme="default"], [data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #000000;          /* Header Background */
+  --md-primary-fg-color--light: #ffffff;   /* Header Text/Icons */
+}
+
+/* Specific override for the 'BirdDog Documentation' title */
+.md-header__title {
+  color: #ffffff !important;
+}
+
+/* Ensure icons (logo, search, palette toggle) are white */
+.md-header {
+  color: #ffffff;
+}
+
+.md-header__button {
+  color: #ffffff !important;
+}
+
+/* Optional: Make the search bar text easier to read on black */
+.md-search__input {
+  color: #ffffff;
+}
