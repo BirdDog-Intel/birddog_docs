@@ -43,21 +43,35 @@ markdown_extensions:
   - pymdownx.snippets
 
 nav:
-  - Getting Started: quick_start_guide.md
-  - Explaination By Page:
-      - Home Page: home_page.md
-      - Farsight Page: farsight_page.md
-      - Signals Page: signals_page.md
-      - Account Manager Page: account_manager.md
-      - Team Page: team_page.md
-  - Improving Signals:
-      - Signals Guide: signals_guide.md
-      - Improving Accuracy: signal_context.md 
+  - Setup:
+      - Adding Accounts: adding_accounts.md
+      - Adjusting Signals: signal_setup.md
+      - Turning on Account recommendations: account_rec_setup.md
+  - Accounts:
+      - How to add accounts: adding_accounts.md
+      - How to get recommendations: account_rec_setup.md
+      - How to Remove Accounts: remove_accounts.md
+      - How to archive accounts: archiving_accounts.md
+  - Plays:
+      - How to create Plays: create_plays.md
+      - How to delete a Play: delete_play.md
+      - How to edit play: edit_play.md
+  - Account Recommendations:
+      - How to setup: account_rec_setup.md
+      - How to adjust/improve Recommendations: adjust_recommendations.md
+      - How to give feedback on recommendations: rec_feedback.md
   - Integrations:
-      - Google Calendar: gcal.md
       - Hubspot: hubspot.md
+      - Slack: slack.md
+      - Google Calendar: gcal.md
       - Salesforce: salesforce.md
-  - Resources:
-      - FAQ: frequently_asked_questions.md
-      - Email Templates: email_templates.md
-  
+  - User Management:
+      - Adding Users: adding_user.md
+      - Removing Users: removing_user.md
+  - Signals:
+      - How to setup new signal: signal_setup.md
+      - How to improve: improve_signal.md
+      - How to delete signals: delete_signal.md
+      - How to mute signals: mute_signal.md
+      - Signals Library and Best Practices: signals_guide.md
+  - Frequently Asked Questions: frequently_asked_questions.md
