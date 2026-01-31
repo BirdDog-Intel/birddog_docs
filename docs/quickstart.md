@@ -22,7 +22,7 @@ Signals are "events" that BirdDog looks for on the internet. Think of them as tr
 <iframe src="https://www.loom.com/embed/a50c6063d7f040348f0e08962a12a0a5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width: 100%; height: 400px; border-radius: 8px;"></iframe>
 * **Action:** [How to setup new signal](signal_setup.md)
 
-### 3. Turn on the "Farsight" Finder
+### 3. Turn on the "Assignment Desk" Account Recommendations
 Once the system knows your current accounts and what signals you like, it can start hunting for new companies you’ve never heard of. This feature is called **Farsight**.
 
 * **How it works:** Farsight scans the entire internet. If it finds a company that looks exactly like your best customers and is showing "High" signals, it will recommend them to you.
