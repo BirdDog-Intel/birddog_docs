@@ -70,17 +70,23 @@
 /* ------------------------------
    CONTENT REFINEMENT & HYPERLINKS
    ------------------------------ */
-/* Standard Blue Hyperlinks in body text */
-.md-typeset a {
+
+/* 1. Target body links specifically to bypass theme defaults */
+.md-typeset article a, 
+.md-typeset .md-content__inner a:not(.md-content__button) {
   color: #0056b3 !important;
-  text-decoration: underline;
+  text-decoration: underline !important;
+  font-weight: 500;
 }
 
-.md-typeset a:hover {
+/* 2. Style the hover state */
+.md-typeset article a:hover, 
+.md-typeset .md-content__inner a:not(.md-content__button):hover {
   color: #003d7a !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
+/* 3. Keep Headers clean and black */
 h1, h2, h3 {
   color: #000;
   font-weight: 800;
@@ -88,8 +94,10 @@ h1, h2, h3 {
   padding-bottom: 10px;
 }
 
+/* 4. Ensure video containers look professional */
 .video-container, iframe {
   border: 1px solid #EEE;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
 }
