@@ -64,8 +64,8 @@
 /* Base TOC Links */
 .md-sidebar--secondary .md-nav__link {
   font-size: 12px !important;
-  padding: 6px 10px !important; /* Added horizontal padding for the 'pill' look */
-  color: #666 !important; 
+  padding: 6px 10px !important;
+  color: #666 !important; /* Muted grey for unselected */
   text-decoration: none !important;
   border-radius: 4px;
   transition: all 0.2s ease;
@@ -73,22 +73,21 @@
 
 /* TOC Hover State */
 .md-sidebar--secondary .md-nav__link:hover {
-  background-color: rgba(0,0,0,0.05) !important;
+  background-color: rgba(0,0,0,0.03) !important;
   color: #000 !important;
 }
 
-/* TOC ACTIVE/SELECTED STATE - HIGH CONTRAST FIX */
+/* TOC ACTIVE/SELECTED STATE - LIGHT GREY FIX */
 .md-sidebar--secondary .md-nav__link--active {
-  background-color: #222 !important; /* Dark charcoal/black background */
-  color: #f8f9fa !important;        /* Light grey/white text */
-  font-weight: 600 !important;
+  background-color: #E8E8E8 !important; /* Light grey background */
+  color: #333333 !important;           /* Dark grey text */
+  font-weight: 700 !important;         /* Bold to indicate selection */
 }
 
-/* Remove any markers that interfere with the new pill look */
-.md-sidebar--secondary .md-nav__link--active::before {
-  display: none !important;
+/* Ensure sub-items in TOC follow the same color logic */
+.md-sidebar--secondary .md-nav__link--active + .md-nav__list .md-nav__link {
+  color: #666 !important;
 }
-
 /* ------------------------------
    CONTENT REFINEMENT & HYPERLINKS
    ------------------------------ */
