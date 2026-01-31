@@ -48,7 +48,7 @@
    RIGHT NAV: GREY TABLE OF CONTENTS
    ------------------------------ */
 .md-sidebar--secondary {
-  background-color: #F9F9F9;
+  background-color: #F9F9F9 !important;
   border-left: 1px solid #EEE;
   padding: 20px !important;
 }
@@ -61,10 +61,31 @@
   margin-bottom: 10px;
 }
 
+/* Base TOC Links */
 .md-sidebar--secondary .md-nav__link {
   font-size: 12px !important;
-  padding: 4px 0 !important;
-  color: #666 !important;
+  padding: 6px 0 !important;
+  color: #666 !important; /* Muted grey for unselected */
+  text-decoration: none !important; /* No underlines in the TOC */
+  background-color: transparent !important;
+}
+
+/* TOC Hover State */
+.md-sidebar--secondary .md-nav__link:hover {
+  color: #000 !important;
+}
+
+/* TOC ACTIVE/SELECTED STATE - FIX */
+.md-sidebar--secondary .md-nav__link--active {
+  color: #000000 !important; /* Force Black text */
+  font-weight: 700 !important; /* Make it bold */
+  background-color: transparent !important; /* Ensure no black background box */
+}
+
+/* Optional: Add a small black line next to the active TOC item */
+.md-sidebar--secondary .md-nav__item--active > .md-nav__link {
+  border-left: 2px solid #000;
+  padding-left: 10px !important;
 }
 
 /* ------------------------------
