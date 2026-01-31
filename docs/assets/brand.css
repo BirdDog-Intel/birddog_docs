@@ -5,8 +5,6 @@
   --md-text-font: "Inter", sans-serif;
   --md-primary-fg-color: #000000 !important;
   --md-code-bg-color: #f8f9fa;
-  
-  /* STANDARD BLUE LINKS */
   --md-typeset-a-color: #0056b3; 
 }
 
@@ -61,53 +59,48 @@
   margin-bottom: 10px;
 }
 
-/* Base TOC Links */
 .md-sidebar--secondary .md-nav__link {
   font-size: 12px !important;
   padding: 6px 10px !important;
-  color: #666 !important; /* Muted grey for unselected */
+  color: #666 !important;
   text-decoration: none !important;
   border-radius: 4px;
-  transition: all 0.2s ease;
 }
 
-/* TOC Hover State */
-.md-sidebar--secondary .md-nav__link:hover {
-  background-color: rgba(0,0,0,0.03) !important;
-  color: #000 !important;
-}
-
-/* TOC ACTIVE/SELECTED STATE - LIGHT GREY FIX */
+/* TOC SELECTED STATE: Light Grey Background, Dark Grey Text */
 .md-sidebar--secondary .md-nav__link--active {
-  background-color: #E8E8E8 !important; /* Light grey background */
-  color: #333333 !important;           /* Dark grey text */
-  font-weight: 700 !important;         /* Bold to indicate selection */
+  background-color: #E8E8E8 !important; 
+  color: #333333 !important;           
+  font-weight: 700 !important;         
 }
 
-/* Ensure sub-items in TOC follow the same color logic */
-.md-sidebar--secondary .md-nav__link--active + .md-nav__list .md-nav__link {
-  color: #666 !important;
-}
 /* ------------------------------
-   CONTENT REFINEMENT & HYPERLINKS
+   CONTENT REFINEMENT & BLUE HYPERLINKS
    ------------------------------ */
 
-/* 1. Target body links specifically to bypass theme defaults */
-.md-typeset article a, 
-.md-typeset .md-content__inner a:not(.md-content__button) {
+/* Targeted body links - simplified for maximum compatibility */
+.md-content a {
   color: #0056b3 !important;
   text-decoration: underline !important;
   font-weight: 500;
 }
 
-/* 2. Style the hover state */
-.md-typeset article a:hover, 
-.md-typeset .md-content__inner a:not(.md-content__button):hover {
+/* Hover state for body links */
+.md-content a:hover {
   color: #003d7a !important;
   text-decoration: none !important;
 }
 
-/* 3. Keep Headers clean and black */
+/* Ensure TOC links don't inherit the blue color */
+.md-sidebar--secondary a.md-nav__link {
+  color: #666 !important;
+  text-decoration: none !important;
+}
+
+.md-sidebar--secondary a.md-nav__link--active {
+  color: #333333 !important;
+}
+
 h1, h2, h3 {
   color: #000;
   font-weight: 800;
@@ -115,7 +108,6 @@ h1, h2, h3 {
   padding-bottom: 10px;
 }
 
-/* 4. Ensure video containers look professional */
 .video-container, iframe {
   border: 1px solid #EEE;
   border-radius: 8px;
