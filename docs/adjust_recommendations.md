@@ -14,14 +14,14 @@
 ---
 
 ### Overview
-If your **Assignment Desk** is surfacing accounts that don't quite hit your Ideal Customer Profile (ICP), you can tune the **Farsight** engine to be more restrictive. Refining your recommendations ensures that your team spends time only on the most exciting, high-fit opportunities.
+If your **Account Suggestions** is surfacing accounts that don't quite hit your Ideal Customer Profile (ICP), you can tune the **Account Finder** engine to be more restrictive. Refining your recommendations ensures that your team spends time only on the most exciting, high-fit opportunities.
 
 ---
 
 ### Two Ways to Refine Results
 
 #### 1. Instant Feedback (0:22 – 0:38)
-On the Assignment Desk, you can "Deny" any account that doesn't fit. 
+On the Account Suggestions page, you can "Deny" any account that doesn't fit. 
 * **The Action:** Click deny and select a reason (e.g., "Not ICP").
 * **The Result:** This sends direct feedback to the BirdDog team to help improve our underlying models for your specific account.
 
@@ -40,7 +40,7 @@ For a broader fix, adjusting your Farsight settings is the most effective way to
 ### Managing Old vs. New Recommendations (3:39 – 4:08)
 When you update your filters and click **Save and Run**, BirdDog applies those rules to all **future** searches.
 * **Existing Leads:** Any accounts already on your Assignment Desk will remain there. They are not automatically deleted.
-* **Full Reset:** If you want a completely fresh start based on your new filters, reach out to our support team, and we can wipe your current Assignment Desk to make room for the new, refined recommendations.
+* **Full Reset:** If you want a completely fresh start based on your new filters, reach out to our support team, and we can wipe your current account suggestions to make room for the new, refined recommendations.
 
 ---
 
