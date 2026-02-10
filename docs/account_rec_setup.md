@@ -1,4 +1,4 @@
-# Assignment Desk & Farsight Account Finder
+# Account Suggestions Setup
 
 ### Walkthrough Video
 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
@@ -14,7 +14,7 @@
 ---
 
 ### Overview
-The **Assignment Desk** is BirdDog's strategic "air traffic control." Powered by **Farsight** (our proprietary account finder), this page surfaces high-intent, high-fit companies that you aren't currently tracking but should be. It bridges the gap between a cold lead and an active opportunity by providing a constant stream of "lookalike" recommendations based on your successful signals.
+The **Account Suggestions Page** is BirdDog's strategic "air traffic control." Powered by **Farsight** (our proprietary account finder), this page surfaces high-intent, high-fit companies that you aren't currently tracking but should be. It bridges the gap between a cold lead and an active opportunity by providing a constant stream of "lookalike" recommendations based on your successful signals.
 
 ---
 
