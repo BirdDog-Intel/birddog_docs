@@ -1,0 +1,116 @@
+/* ------------------------------
+   GLOBAL BRANDING & LINEWORK
+   ------------------------------ */
+:root {
+  --md-text-font: "Inter", sans-serif;
+  --md-primary-fg-color: #000000 !important;
+  --md-code-bg-color: #f8f9fa;
+  --md-typeset-a-color: #0056b3; 
+}
+
+/* ------------------------------
+   HEADER: PURE BLACK
+   ------------------------------ */
+.md-header {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #333;
+}
+
+/* ------------------------------
+   LEFT NAV: THE "PLATFORM" SIDEBAR
+   ------------------------------ */
+.md-nav__item--nested > .md-nav__link {
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 11px !important;
+  letter-spacing: 0.05em;
+  color: #888 !important;
+  margin-top: 20px;
+}
+
+.md-nav__link {
+  font-size: 14px !important;
+  padding: 8px 12px !important;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.md-nav__link--active {
+  background: #111 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ------------------------------
+   RIGHT NAV: GREY TABLE OF CONTENTS
+   ------------------------------ */
+.md-sidebar--secondary {
+  background-color: #F9F9F9 !important;
+  border-left: 1px solid #EEE;
+  padding: 20px !important;
+}
+
+.md-sidebar--secondary .md-nav__title {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.md-sidebar--secondary .md-nav__link {
+  font-size: 12px !important;
+  padding: 6px 10px !important;
+  color: #666 !important;
+  text-decoration: none !important;
+  border-radius: 4px;
+}
+
+/* TOC SELECTED STATE: Light Grey Background, Dark Grey Text */
+.md-sidebar--secondary .md-nav__link--active {
+  background-color: #E8E8E8 !important; 
+  color: #333333 !important;           
+  font-weight: 700 !important;         
+}
+
+/* ------------------------------
+   CONTENT REFINEMENT & BLUE HYPERLINKS
+   ------------------------------ */
+
+/* Targeted body links - simplified for maximum compatibility */
+.md-content a {
+  color: #0056b3 !important;
+  text-decoration: underline !important;
+  font-weight: 500;
+}
+
+/* Hover state for body links */
+.md-content a:hover {
+  color: #003d7a !important;
+  text-decoration: none !important;
+}
+
+/* Ensure TOC links don't inherit the blue color */
+.md-sidebar--secondary a.md-nav__link {
+  color: #666 !important;
+  text-decoration: none !important;
+}
+
+.md-sidebar--secondary a.md-nav__link--active {
+  color: #333333 !important;
+}
+
+h1, h2, h3 {
+  color: #000;
+  font-weight: 800;
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 10px;
+}
+
+.video-container, iframe {
+  border: 1px solid #EEE;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
