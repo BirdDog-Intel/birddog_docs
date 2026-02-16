@@ -59,7 +59,7 @@ nav:
       - How to adjust/improve Recommendations: adjust_recommendations.md
       - How to give feedback on recommendations: rec_feedback.md
   - Integrations:
-      - Hubspot: hubspot.md
+      - HubSpot: hubspot.md
       - Slack: slack.md
       - Google Calendar: gcal.md
       - Salesforce: salesforce.md
