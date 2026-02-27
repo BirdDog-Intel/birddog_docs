@@ -17,7 +17,7 @@
 The **HubSpot integration** connects BirdDog directly with your CRM, allowing your account data, signals, and research insights to sync seamlessly. Once connected, BirdDog pushes enriched company data, intent scores, and "Why Now" summaries straight into HubSpot records—giving your reps instant access to actionable intelligence inside their daily workflow.
 
 ### Why It Matters
-* **Automatic Enrichment:** Replaces manual spreadsheet exports by continuously updating company data and signal scores inside HubSpot.
+* **Automatic Enrichment:** BirdDog data is easily accessible to your reps as they go about normal business in the tools they already use without another login. Also, Replaces manual spreadsheet exports by continuously updating company data and signal scores inside HubSpot.
 * **Smarter Signal Context:** BirdDog adjusts the information it surfaces based on a deal’s stage, helping reps focus on qualifying early-stage leads or closing active deals.
 * **Pipeline Calibration:** By accessing deal objects, BirdDog learns from your closed-won data to calculate a **"Win Rate Boost"** for new prospects.
 
@@ -76,32 +76,41 @@ Use this for complex CRM setups where you want to map BirdDog data to existing c
 
 ### Technical Field Mappings
 
-### Company Mapping & Property Configuration
+### Step 1: Company Mapping
 For the best experience, an Admin should create these fields in **HubSpot Settings > Properties > Company Information**. BirdDog uses these fields to push enriched data directly into your CRM. 
 
 | BirdDog Field | Required | HubSpot Internal Name | Field Type | Description / Purpose |
 | :--- | :---: | :--- | :--- | :--- |
-| `crm_id` | ✅ | `hs_object_id` | Read Only | Unique HubSpot identifier used for syncing. |
-| `Company_Domain` | ✅ | `domain` or `website` | Domain/URL | **Required** for BirdDog to identify and process the account. |
-| `BirdDog_Description`| Optional | `birddog_description` | Single-line text | Stores the AI "Why Now" summary of the company’s fit. |
-| `BirdDog_Score` | Optional | `birddog_score` | Number | Proprietary rank (0–100). Scores >10 indicate high value. |
-| `BirdDog_Link` | Optional | `birddog_link` | URL | Direct link to the full research report on the BirdDog platform. |
-| `BirdDog_Signals` | Optional | `birddog_signals` | Rich Text | A formatted, bulleted list of the most recent signals found. |
-| `BirdDog_Originated` | Optional | `birddog_originated` | Single Checkbox | Records if the account was discovered/originated by BirdDog. |
-| `BirdDog_Add_Date` | Optional | `birddog_add_date` | Date & Time | The date the account was originally added to BirdDog. |
-| `BirdDog_Signal_List`| Optional | `birddog_signal_list` | Multi-Checkbox | A list of signal tags (e.g., Funding, Hiring). *See note below.* |
+| `crm_id` | **Required** | `hs_object_id` | Read Only | Unique HubSpot identifier used for syncing. |
+| `Company_Domain` | **Required** | `domain` or `website` | Domain/URL | **Required** for BirdDog to identify and process the account. |
+| `BirdDog_Description`| Create | `birddog_description` | Single-line text | Stores the AI "Why Now" summary of the company’s fit. |
+| `BirdDog_Score` | Create | `birddog_score` | Number | Proprietary rank (0–100). Scores >10 indicate high value. |
+| `BirdDog_Link` | Create | `birddog_link` | URL | Direct link to the full research report on the BirdDog platform. |
+| `BirdDog_Signals` | Create | `birddog_signals` | Rich Text | A formatted, bulleted list of the most recent signals found. |
+| `BirdDog_Originated` | Create | `birddog_originated` | Single Checkbox | Records if the account was discovered/originated by BirdDog. |
+| `BirdDog_Add_Date` | Create | `birddog_add_date` | Date & Time | The date the account was originally added to BirdDog. |
+| `BirdDog_Signal_List`| Create | `birddog_signal_list` | Multi-Checkbox | A list of signal tags (e.g., Funding, Hiring). *See note below.* |
 
 > **Note on BirdDog Signal List:** When creating this property, you do not need to manually enter every signal as an option. Simply enter one temporary placeholder (e.g., "Pending"); the BirdDog system will automatically override and populate the correct tags during the first sync.
 
-#### Deal Mapping (Optional)
-
+#### Step 2: Deal Mapping
 Mapping the below fields into BirdDog will help the system provide better signal data & recommendations based on the status of each company in HubSpot. Additionally, BirdDog will be able to leverage these fields to backtest signals to see which ones are most strongly correlated with closed won deals.
-| BirdDog Field | Required | HubSpot Property | Purpose |
-| :--- | :--- | :--- | :--- |
-| `crm_id` | ✅ | `hs_object_id` | Unique identifier for the deal. |
-| `crm_company_id` | ✅ | `hs_primary_associated_company` | Links the deal to the correct account. |
-| `Stage_name` | Optional | `dealstage` | Adjusts signal priority based on pipeline stage. |
-| `Is_closed/won` | Optional | `hs_is_closed_won` | Used for win-rate backtesting and calibration. |
+
+| BirdDog Field | Required | HubSpot Internal Name | Purpose / Description |
+| :--- | :---: | :--- | :--- |
+| `crm_id` | **Required** | `hs_object_id` | Unique HubSpot identifier for the deal. |
+| `crm_company_id` | **Required** | `hs_primary_associated_company` | Links the deal to the primary account. |
+| `Name` | Suggested | `dealname` | The name of the deal. |
+| `Descr` | Suggested | `description` | Internal description of the opportunity. |
+| `Stage_name` | Suggested | `dealstage` | Adjusts signal prioritization by pipeline stage. |
+| `Amount` | Suggested | `amount` | Total size/value of the deal. |
+| `Close_date` | Suggested | `closedate` | Projected or actual close date. |
+| `Prob` | Suggested | `hs_deal_stage_probability` | Estimated probability of winning. |
+| `Next_step` | Suggested | `next_step` | The next tactical action for the rep. |
+| `Lead_source` | Suggested | `hs_analytics_source` | Original source of the deal. |
+| `Is_closed` | Suggested | `hs_is_closed` | Indicates if the deal is no longer active. |
+| `Is_won` | Suggested | `hs_is_closed_won` | Used to calculate your Win Rate Boost. |
+| `Created_date` | Suggested | `createdate` | The date the deal was first created. |
 
 ---
 
