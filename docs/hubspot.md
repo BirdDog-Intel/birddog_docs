@@ -21,18 +21,17 @@ The **HubSpot integration** connects BirdDog directly with your CRM, allowing yo
 * **Smarter Signal Context:** BirdDog adjusts the information it surfaces based on a deal’s stage, helping reps focus on qualifying early-stage leads or closing active deals.
 * **Pipeline Calibration:** By accessing deal objects, BirdDog learns from your closed-won data to calculate a **"Win Rate Boost"** for new prospects.
 
----
 
-### Application & Authentication
+
+### BirdDog App Card
 BirdDog is a **verified Public App** available on the [HubSpot App Marketplace](https://ecosystem.hubspot.com/marketplace/listing/birddog-scout).
 
 * **App Name:** BirdDogScout
 * **App ID:** `16144816`
 
-Following the principle of least privilege, we request only the necessary scopes:
 
 ### Application Scopes & Permissions
-BirdDog follows the principle of least privilege. The following scopes are used to facilitate the sync between BirdDog and HubSpot:
+BirdDog follows the principle of least privilege. Following the principle of least privilege, the following scopes are used to facilitate the sync between BirdDog and HubSpot:
 
 | Scope | Requirement | Purpose |
 | :--- | :--- | :--- |
@@ -46,7 +45,6 @@ BirdDog follows the principle of least privilege. The following scopes are used 
 | `sales-email-read` | Suggested | Refines engagement scores based on activity. |
 | `crm.schemas.companies.write`| Suggested | Allows BirdDog to update custom property definitions. |
 
----
 
 ### Setup & Connection (0:00 – 0:42)
 While it is necessary to give BirdDog access to your Company object to make the integration work, the Deal object is optional but unlocks significant value for your sales team. The mapping can be completed & updated at any time via the BirdDog Platform, after integration is complete. 
@@ -57,7 +55,6 @@ While it is necessary to give BirdDog access to your Company object to make the 
 4.  Leave the environment as **Default** (unless testing in a Sandbox).
 5.  Click **Submit** and select your HubSpot account. Review permissions and click **Connect App**.
 
----
 
 ### Configuration Paths (0:45 – 1:55)
 
@@ -72,11 +69,10 @@ Use this for complex CRM setups where you want to map BirdDog data to existing c
 1.  Select **Custom Setup**.
 2.  Manually map the BirdDog fields to your preferred HubSpot properties using the tables below.
 
----
 
 ### Technical Field Mappings
 
-### Step 1: Company Mapping
+#### Step 1: Company Mapping
 For the best experience, an Admin should create these fields in **HubSpot Settings > Properties > Company Information**. BirdDog uses these fields to push enriched data directly into your CRM. 
 
 | BirdDog Field | Required | HubSpot Internal Name | Field Type | Description / Purpose |
@@ -112,14 +108,12 @@ Mapping the below fields into BirdDog will help the system provide better signal
 | `Is_won` | Suggested | `hs_is_closed_won` | Used to calculate your Win Rate Boost. |
 | `Created_date` | Suggested | `createdate` | The date the deal was first created. |
 
----
 
 ### Data Sync & User Mapping
 * **Daily Sync:** BirdDog refreshes data in a batch operation every day between **5:00 AM and 7:30 AM ET**.
 * **Initial Sync:** During the first week, expect a higher number of requests as the system calibrates its sync with your CRM history.
 * **User Mapping:** BirdDog identifies users by email. To associate your reps correctly, please send a two-column CSV (`email` → `HubSpot user ID`) to **hello@getbirddog.ai**.
 
----
 
 ### Request Limits
 The BirdDog integration leverages the batch upload API for HubSpot to limit the amount of transactions needed per day. Generally, a daily sync will occur between 5 am and 9 am et, where BirdDog pulls the designated accounts and writes updates to their designated BirdDog fields. 
@@ -128,7 +122,6 @@ From time to time, there will be additional push and pulls, such as when users u
 
 Additionally, during the first week of the integration, expect a higher number of requests as the system calibrates its sync with your crm.
 
----
 
 ### Support
 📧 **noah@getbirddog.ai** | 📞 **(231) 855-8001**
