@@ -29,7 +29,7 @@ To achieve the first benefit, BirdDog needs to view the companies in your CRM. T
 ### App & Installation Guide
 BirdDog connects to your HubSpot instance via a verified Public App, BirdDogScout, App Id 16144816. The best way to install the app is directly through the BirdDog platform.
 
-1. Login  
+1. Login to BirdDog  
 2. Click User Settings in the bottom left corner of the nav bar  
 3. Scroll down to the integrations section and find "Setup HubSpot"  
 4. Click "Connect HubSpot"  
